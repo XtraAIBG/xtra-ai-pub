@@ -364,6 +364,11 @@
       return href;
     }
   }
+  // Text before a link, minus a trailing copy of the link's name ("„Name“: " / "Name – " / "Name ").
+  function stripTrailingName(text, name) {
+    const esc = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return text.replace(new RegExp("[„\"“«]?" + esc + "[“\"»]?\\s*[:–—-]?\\s*$", "i"), "");
+  }
   // END pure-parser
 
   const sameUrl = (a, b) => !!a && !!b && a.replace(/\/+$/, "") === b.replace(/\/+$/, "");
@@ -399,7 +404,18 @@
             // Our own pages open in the same tab (on this copy of the site); the chat reopens there.
             a.href = own;
             // A bare link shows the page's name instead of "xtra-ai.com/…".
-            if (!tok.label && !a.classList.contains("cta")) a.textContent = ownLabel(own);
+            if (!tok.label && !a.classList.contains("cta")) {
+              const name = ownLabel(own);
+              a.textContent = name;
+              // "Title https://…" from the bot would read "Title Title": when the text right before the
+              // link already ends with the name (quotes, colon or dash allowed), that text becomes the link.
+              const prev = parent.lastChild;
+              if (prev && prev.nodeType === 3 && name !== T.ownLink) {
+                const txt = prev.textContent;
+                const cut = stripTrailingName(txt, name);
+                if (cut !== txt) prev.textContent = cut;
+              }
+            }
           } else if (!tok.href.startsWith("mailto:")) {
             a.target = "_blank";
             a.rel = "noopener";
