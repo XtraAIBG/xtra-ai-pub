@@ -30,7 +30,9 @@
         service: "Service",
         privacy: "Messages are answered by AI. Please don't share personal or sensitive data.",
         limit: "We've reached the message limit for this conversation. The quickest next step is a free call with us:",
-        chips: ["I want more customers", "I lose time on routine tasks", "How much does it cost?", "Show me articles"],
+        // [button label, message sent]; a plain string sends its own label.
+        chips: ["I want more customers", "I lose time on routine tasks", "How much does it cost?",
+          ["Helpful tips for my business", "What helpful tips do you have for a small business like mine?"]],
         chipPage: (t) => "I have a question about “" + t + "”",
         chipPageLabel: "A question about this page",
         teaserClose: "Hide",
@@ -51,7 +53,9 @@
         service: "Услуга",
         privacy: "Отговорите са от AI. Моля, не споделяйте лични или чувствителни данни.",
         limit: "Достигнахме лимита на съобщения за този разговор. Най-бързата следваща стъпка е безплатен разговор с нас:",
-        chips: ["Искам повече клиенти", "Губя време в рутинни задачи", "Колко струва?", "Покажете ми статии"],
+        // [надпис на бутона, изпратен текст]; обикновен текст изпраща самия надпис.
+        chips: ["Искам повече клиенти", "Губя време в рутинни задачи", "Колко струва?",
+          ["Полезни съвети за бизнеса", "Какви полезни съвети имате за малък бизнес като моя?"]],
         chipPage: (t) => "Имам въпрос за „" + t + "“",
         chipPageLabel: "Въпрос за тази страница",
         teaserClose: "Скрий",
@@ -514,7 +518,7 @@
     if (history.length) return;
     const box = document.createElement("div");
     box.className = "chips";
-    const items = T.chips.map((label) => ({ label, text: label }));
+    const items = T.chips.map((c) => (Array.isArray(c) ? { label: c[0], text: c[1] } : { label: c, text: c }));
     if (!onHome && PAGE.title) items.unshift({ label: T.chipPageLabel, text: T.chipPage(PAGE.title), page: true });
     for (const it of items) {
       const b = document.createElement("button");
