@@ -120,7 +120,17 @@
       .teaser .c { background: transparent; border: 0; color: #4f5d63; font-size: 18px; line-height: 1; cursor: pointer; padding: 2px 4px; border-radius: 6px; }
       .teaser .c:hover { background: #eef7fc; }
       @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.96); } to { opacity: 1; transform: none; } }
-      @media (prefers-reduced-motion: reduce) { .teaser.on { animation: none; } }
+      /* "Alex is typing" dots next to the closed chat button. */
+      .dots { position: absolute; right: 66px; bottom: 12px; display: none; align-items: center; gap: 4px;
+        background: #fff; border-radius: 16px 16px 4px 16px; padding: 10px 12px;
+        box-shadow: 0 12px 28px -14px rgba(23,41,51,.45), 0 3px 10px rgba(23,41,51,.12); }
+      .dots.on { display: flex; animation: pop .3s ease-out; }
+      .open .dots { display: none; }
+      .dots i { width: 7px; height: 7px; border-radius: 50%; background: #2a8178; opacity: .35; animation: blink 1.2s infinite ease-in-out; }
+      .dots i:nth-child(2) { animation-delay: .2s; }
+      .dots i:nth-child(3) { animation-delay: .4s; }
+      @keyframes blink { 0%, 80%, 100% { opacity: .3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
+      @media (prefers-reduced-motion: reduce) { .teaser.on, .dots.on { animation: none; } .dots i { animation: none; opacity: .7; } }
       .head { background: #1f6a66; color: #fff; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
       .head strong { font-size: 15px; font-weight: 700; }
       .nm { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
@@ -222,6 +232,7 @@
         </form>
         <p class="note"></p>
       </div>
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
       <div class="teaser" role="status"><button class="t" type="button"><img alt="" width="28" height="28"><span></span></button><button class="c" type="button">×</button></div>
       <button class="fab" type="button" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -657,11 +668,16 @@
   // Open state survives page changes in this tab: after following a link from the chat, the next page
   // opens the chat again at the latest message.
   const OPEN_KEY = "xtra-ai-chat-open";
+  const USED_KEY = "xtra-ai-chat-used"; // set once the chat has been opened in this visit
   const setOpen = (v, { focus = true } = {}) => {
     wrap.classList.toggle("open", v);
     fab.setAttribute("aria-expanded", String(v));
     fab.setAttribute("aria-label", v ? T.close : T.open);
     try { v ? sessionStorage.setItem(OPEN_KEY, "1") : sessionStorage.removeItem(OPEN_KEY); } catch {}
+    if (v) {
+      try { sessionStorage.setItem(USED_KEY, "1"); } catch {}
+      $(".dots").classList.remove("on");
+    }
     if (v) {
       msgsEl.scrollTop = msgsEl.scrollHeight;
       if (focus) input.focus();
@@ -674,9 +690,24 @@
   fab.addEventListener("click", () => setOpen(!wrap.classList.contains("open")));
 
   // ---- Teaser bubble ----
-  // After TEASER_DELAY on a page, a small "can I help?" bubble appears next to the button: once per
-  // visit (sessionStorage), and never when the visitor has already chatted or opened the chat.
+  // Typing dots appear next to the closed button at DOTS_DELAY and turn into a small "can I help?" bubble
+  // at TEASER_DELAY: once per visit (sessionStorage), and never when the visitor has already chatted or
+  // opened the chat. Until the chat is opened, the dots come back briefly every REMIND_EVERY.
+  const DOTS_DELAY = 12000;
   const TEASER_DELAY = 15000;
+  const REMIND_EVERY = 40000;
+  const REMIND_FOR = 3000;
+  const dots = $(".dots");
+  const chatUsed = () => {
+    if (history.length) return true;
+    try { return sessionStorage.getItem(USED_KEY) === "1"; } catch { return false; }
+  };
+  const isOpen = () => wrap.classList.contains("open");
+  const showDots = (ms) => {
+    if (isOpen() || chatUsed() || teaser.classList.contains("on")) return;
+    dots.classList.add("on");
+    if (ms) setTimeout(() => dots.classList.remove("on"), ms);
+  };
   const TEASER_KEY = "xtra-ai-chat-teaser";
   const teaser = $(".teaser");
   $(".teaser .t span").textContent = T.teaser;
@@ -692,12 +723,18 @@
     try { sessionStorage.setItem(TEASER_KEY, "1"); } catch {}
   };
   if (!teaserSeen() && history.length === 0) {
+    setTimeout(() => { if (!teaserSeen()) showDots(); }, DOTS_DELAY);
     setTimeout(() => {
-      if (wrap.classList.contains("open") || teaserSeen()) return;
+      dots.classList.remove("on");
+      if (isOpen() || teaserSeen() || chatUsed()) return;
       teaser.classList.add("on");
       try { sessionStorage.setItem(TEASER_KEY, "1"); } catch {}
     }, TEASER_DELAY);
   }
+  const remind = setInterval(() => {
+    if (chatUsed()) return clearInterval(remind);
+    if (document.visibilityState === "visible") showDots(REMIND_FOR);
+  }, REMIND_EVERY);
   $(".teaser .t").addEventListener("click", () => { hideTeaser(); setOpen(true); });
   $(".teaser .c").addEventListener("click", hideTeaser);
   fab.addEventListener("click", hideTeaser);
