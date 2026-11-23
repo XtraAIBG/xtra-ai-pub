@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="800" height="660" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Седем добри практики от документацията на Google, които подреждат информацията на сайта на малкия бизнес за Търсене и функциите с AI</title>
+  <desc id="d">Карти с отметки за достъп за Google, вътрешни връзки, удобство за посетителите, информация в текст, снимки и видео, структурирани данни и профил в Google, и бележка, че съветите не осигуряват показване в отговор на AI.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="658" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Какво може да направи малкият бизнес</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Основните добри практики по списъка от документацията на Google</text>
+
+  <!-- 1: Достъп за Google -->
+  <rect x="24" y="104" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="58" cy="137" r="14" fill="#2a8178"/>
+  <polyline points="51,137 56,142 65,132" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="143" font-size="16" font-weight="700" fill="#172933">Достъп за Google</text>
+  <text x="84" y="172" font-size="14" fill="#4f5d63">robots.txt, хостингът и CDN</text>
+  <text x="84" y="193" font-size="14" fill="#4f5d63">позволяват обхождане</text>
+
+  <!-- 2: Вътрешни връзки -->
+  <rect x="412" y="104" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="137" r="14" fill="#2a8178"/>
+  <polyline points="439,137 444,142 453,132" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="472" y="143" font-size="16" font-weight="700" fill="#172933">Вътрешни връзки</text>
+  <text x="472" y="172" font-size="14" fill="#4f5d63">Важните страници са свързани</text>
+  <text x="472" y="193" font-size="14" fill="#4f5d63">от менюто и от текста</text>
+
+  <!-- 3: Удобство за посетителите -->
+  <rect x="24" y="240" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="58" cy="273" r="14" fill="#2a8178"/>
+  <polyline points="51,273 56,278 65,268" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="279" font-size="16" font-weight="700" fill="#172933">Удобство за посетителите</text>
+  <text x="84" y="308" font-size="14" fill="#4f5d63">Страниците са удобни за</text>
+  <text x="84" y="329" font-size="14" fill="#4f5d63">хората, които ги отварят</text>
+
+  <!-- 4: Информация в текст -->
+  <rect x="412" y="240" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="273" r="14" fill="#2a8178"/>
+  <polyline points="439,273 444,278 453,268" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="472" y="279" font-size="16" font-weight="700" fill="#172933">Информация в текст</text>
+  <text x="472" y="308" font-size="14" fill="#4f5d63">Меню, ценоразпис, работно време:</text>
+  <text x="472" y="329" font-size="14" fill="#4f5d63">и като текст, не само като снимка</text>
+
+  <!-- 5: Снимки и видео -->
+  <rect x="24" y="376" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="58" cy="409" r="14" fill="#2a8178"/>
+  <polyline points="51,409 56,414 65,404" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="415" font-size="16" font-weight="700" fill="#172933">Снимки и видео</text>
+  <text x="84" y="444" font-size="14" fill="#4f5d63">Където е подходящо, качествени</text>
+  <text x="84" y="465" font-size="14" fill="#4f5d63">снимки и видео допълват текста</text>
+
+  <!-- 6: Структурирани данни -->
+  <rect x="412" y="376" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="409" r="14" fill="#2a8178"/>
+  <polyline points="439,409 444,414 453,404" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="472" y="415" font-size="16" font-weight="700" fill="#172933">Структурирани данни</text>
+  <text x="472" y="444" font-size="14" fill="#4f5d63">Ако ги има, да съвпадат</text>
+  <text x="472" y="465" font-size="14" fill="#4f5d63">с видимия текст на страницата</text>
+
+  <!-- 7: Профил в Google -->
+  <rect x="24" y="512" width="364" height="124" rx="14" fill="#d5f6eb"/>
+  <circle cx="58" cy="545" r="14" fill="#2a8178"/>
+  <polyline points="51,545 56,550 65,540" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="551" font-size="16" font-weight="700" fill="#172933">Профил в Google</text>
+  <text x="84" y="580" font-size="14" fill="#4f5d63">Актуална информация в профила,</text>
+  <text x="84" y="601" font-size="14" fill="#4f5d63">а при магазин и в Merchant Center</text>
+
+  <!-- note -->
+  <rect x="412" y="512" width="364" height="124" rx="14" fill="#d0ebfc"/>
+  <circle cx="446" cy="545" r="13" fill="none" stroke="#256f9e" stroke-width="2"/>
+  <line x1="446" y1="538" x2="446" y2="547" stroke="#256f9e" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="446" cy="552.5" r="1.6" fill="#256f9e"/>
+  <text x="472" y="551" font-size="16" font-weight="700" fill="#172933">Важно</text>
+  <text x="472" y="580" font-size="14" fill="#172933">Съветите подреждат информацията</text>
+  <text x="472" y="601" font-size="14" fill="#172933">на сайта Ви, но не осигуряват</text>
+  <text x="472" y="622" font-size="14" fill="#172933">показване в отговор на AI.</text>
+</svg>

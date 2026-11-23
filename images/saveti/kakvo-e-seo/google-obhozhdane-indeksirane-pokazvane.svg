@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 442" width="800" height="442" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Трите етапа, в които Google намира и показва страниците: обхождане, индексиране и показване на резултати</title>
+  <desc id="d">Три номерирани карти, свързани със стрелки: роботите обхождат страниците по връзките, Google записва съдържанието в индекса си и при търсене връща страници от индекса; отдолу е отбелязано, че страница извън индекса няма как да се появи в резултатите.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="440" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Как Google намира и показва страниците</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Три етапа, които следват един след друг</text>
+
+  <!-- stage 1 -->
+  <rect x="24" y="108" width="237" height="214" rx="14" fill="#d5f6eb"/>
+  <circle cx="142.5" cy="148" r="18" fill="#2a8178"/>
+  <text x="142.5" y="154" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">1</text>
+  <text x="142.5" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Обхождане</text>
+  <text x="142.5" y="230" text-anchor="middle" font-size="15" fill="#4f5d63">Роботи (crawlers)</text>
+  <text x="142.5" y="252" text-anchor="middle" font-size="15" fill="#4f5d63">откриват страниците</text>
+  <text x="142.5" y="274" text-anchor="middle" font-size="15" fill="#4f5d63">и преминават по</text>
+  <text x="142.5" y="296" text-anchor="middle" font-size="15" fill="#4f5d63">връзките между тях</text>
+
+  <!-- arrow 1 → 2 -->
+  <polyline points="267,205 275,215 267,225" fill="none" stroke="#1f6a66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- stage 2 -->
+  <rect x="281" y="108" width="237" height="214" rx="14" fill="#d5f6eb"/>
+  <circle cx="399.5" cy="148" r="18" fill="#2a8178"/>
+  <text x="399.5" y="154" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">2</text>
+  <text x="399.5" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Индексиране</text>
+  <text x="399.5" y="230" text-anchor="middle" font-size="15" fill="#4f5d63">Google анализира</text>
+  <text x="399.5" y="252" text-anchor="middle" font-size="15" fill="#4f5d63">съдържанието и го</text>
+  <text x="399.5" y="274" text-anchor="middle" font-size="15" fill="#4f5d63">записва в индекса,</text>
+  <text x="399.5" y="296" text-anchor="middle" font-size="15" fill="#4f5d63">който е като каталог</text>
+
+  <!-- arrow 2 → 3 -->
+  <polyline points="524,205 532,215 524,225" fill="none" stroke="#1f6a66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- stage 3 -->
+  <rect x="538" y="108" width="237" height="214" rx="14" fill="#d5f6eb"/>
+  <circle cx="656.5" cy="148" r="18" fill="#2a8178"/>
+  <text x="656.5" y="154" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">3</text>
+  <text x="656.5" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Показване на резултати</text>
+  <text x="656.5" y="230" text-anchor="middle" font-size="15" fill="#4f5d63">Когато човек търси,</text>
+  <text x="656.5" y="252" text-anchor="middle" font-size="15" fill="#4f5d63">Google връща страници</text>
+  <text x="656.5" y="274" text-anchor="middle" font-size="15" fill="#4f5d63">от индекса, които</text>
+  <text x="656.5" y="296" text-anchor="middle" font-size="15" fill="#4f5d63">отговарят на търсенето</text>
+
+  <!-- note -->
+  <rect x="24" y="342" width="751" height="76" rx="14" fill="#d0ebfc"/>
+  <circle cx="58" cy="380" r="13" fill="none" stroke="#256f9e" stroke-width="2"/>
+  <line x1="58" y1="373" x2="58" y2="382" stroke="#256f9e" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="58" cy="387.5" r="1.6" fill="#256f9e"/>
+  <text x="86" y="374" font-size="15" font-weight="600" fill="#172933">Страница, която не може да бъде обходена или не е влязла в индекса,</text>
+  <text x="86" y="397" font-size="15" fill="#4f5d63">няма как да се появи в резултатите, колкото и добър да е текстът ѝ.</text>
+</svg>

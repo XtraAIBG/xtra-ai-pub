@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 476" width="800" height="476" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Файловете, които да поискате от дизайнера: векторен файл, PNG с прозрачен фон, версии на знака, цветови кодове, шрифтовете и правата</title>
+  <desc id="d">Списък от шест отметнати карти с файловете и данните за логото, които е добре да получите от дизайнера, и бележка да пазите файловете на място с общ достъп.</desc>
+  <rect x="1" y="1" width="798" height="474" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Какви файлове да поискате от дизайнера</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Поискайте пълен комплект файлове, когато логото е готово</text>
+  <rect x="24" y="104" width="368" height="84" rx="14" fill="#d5f6eb"/>
+  <circle cx="60" cy="146" r="18" fill="#ffffff" stroke="#2a8178" stroke-width="2"/>
+  <path d="M52 146 L58 152 L69 139" fill="none" stroke="#2a8178" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="134" font-size="16" font-weight="700" fill="#172933">Векторен файл</text>
+  <text x="94" y="156" font-size="14" fill="#4f5d63">SVG, PDF или EPS</text>
+  <text x="94" y="175" font-size="14" fill="#4f5d63">за печат и за промени</text>
+  <rect x="408" y="104" width="368" height="84" rx="14" fill="#d0ebfc"/>
+  <circle cx="444" cy="146" r="18" fill="#ffffff" stroke="#256f9e" stroke-width="2"/>
+  <path d="M436 146 L442 152 L453 139" fill="none" stroke="#256f9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="478" y="134" font-size="16" font-weight="700" fill="#172933">PNG с прозрачен фон</text>
+  <text x="478" y="156" font-size="14" fill="#4f5d63">Без бял правоъгълник</text>
+  <text x="478" y="175" font-size="14" fill="#4f5d63">около знака</text>
+  <rect x="24" y="200" width="368" height="84" rx="14" fill="#d5f6eb"/>
+  <circle cx="60" cy="242" r="18" fill="#ffffff" stroke="#2a8178" stroke-width="2"/>
+  <path d="M52 242 L58 248 L69 235" fill="none" stroke="#2a8178" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="230" font-size="16" font-weight="700" fill="#172933">Версии на знака</text>
+  <text x="94" y="252" font-size="14" fill="#4f5d63">Пълноцветна, черна</text>
+  <text x="94" y="271" font-size="14" fill="#4f5d63">и бяла версия</text>
+  <rect x="408" y="200" width="368" height="84" rx="14" fill="#d0ebfc"/>
+  <circle cx="444" cy="242" r="18" fill="#ffffff" stroke="#256f9e" stroke-width="2"/>
+  <path d="M436 242 L442 248 L453 235" fill="none" stroke="#256f9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="478" y="230" font-size="16" font-weight="700" fill="#172933">Цветови кодове</text>
+  <text x="478" y="252" font-size="14" fill="#4f5d63">HEX или RGB за екран,</text>
+  <text x="478" y="271" font-size="14" fill="#4f5d63">CMYK за печат</text>
+  <rect x="24" y="296" width="368" height="84" rx="14" fill="#d5f6eb"/>
+  <circle cx="60" cy="338" r="18" fill="#ffffff" stroke="#2a8178" stroke-width="2"/>
+  <path d="M52 338 L58 344 L69 331" fill="none" stroke="#2a8178" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="326" font-size="16" font-weight="700" fill="#172933">Шрифтовете</text>
+  <text x="94" y="348" font-size="14" fill="#4f5d63">Имената и условията</text>
+  <text x="94" y="367" font-size="14" fill="#4f5d63">за ползване</text>
+  <rect x="408" y="296" width="368" height="84" rx="14" fill="#d0ebfc"/>
+  <circle cx="444" cy="338" r="18" fill="#ffffff" stroke="#256f9e" stroke-width="2"/>
+  <path d="M436 338 L442 344 L453 331" fill="none" stroke="#256f9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="478" y="326" font-size="16" font-weight="700" fill="#172933">Правата</text>
+  <text x="478" y="348" font-size="14" fill="#4f5d63">Писмено уточнение какви</text>
+  <text x="478" y="367" font-size="14" fill="#4f5d63">права получавате</text>
+  <rect x="24" y="396" width="752" height="56" rx="12" fill="#f3f7f8" stroke="#dbe5e7" stroke-width="1"/>
+  <text x="400" y="429" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Пазете файловете на място, до което имат достъп и колегите Ви</text>
+</svg>

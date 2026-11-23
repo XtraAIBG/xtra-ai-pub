@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 556" width="800" height="556" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Шест задачи в бизнеса, за които ChatGPT подготвя първия вариант: отговори на запитвания, чернова на оферта, публикации, резюме на дълъг текст, превод и редакция</title>
+  <desc id="d">Шест карти с икона, име на задачата и кратко пояснение какво остава за Вас; отдолу е отбелязано, че всеки текст се проверява от човек, преди да бъде изпратен.</desc>
+  <rect x="1" y="1" width="798" height="554" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">За кои задачи в бизнеса е полезен ChatGPT</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Вие давате фактите, а ChatGPT подготвя първия вариант</text>
+  <rect x="24" y="108" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="64" cy="160" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="54" y="151" width="20" height="14" rx="4" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 165 L57 170 L65 165" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="142" font-size="16" font-weight="700" fill="#172933">Отговори на запитвания</text>
+  <text x="100" y="168" font-size="15" fill="#4f5d63">Учтив отговор без личните</text>
+  <text x="100" y="190" font-size="15" fill="#4f5d63">данни на клиента</text>
+  <rect x="408" y="108" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="448" cy="160" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="440" y="149" width="16" height="22" rx="3" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="444" y1="155" x2="452" y2="155" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="444" y1="160" x2="452" y2="160" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="444" y1="165" x2="449" y2="165" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="142" font-size="16" font-weight="700" fill="#172933">Чернова на оферта</text>
+  <text x="484" y="168" font-size="15" fill="#4f5d63">Цените и условията</text>
+  <text x="484" y="190" font-size="15" fill="#4f5d63">въвеждате Вие</text>
+  <rect x="24" y="224" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="64" cy="276" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="54" y="266" width="8" height="8" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="54" y="278" width="8" height="8" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="66" y="266" width="8" height="8" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="66" y="278" width="8" height="8" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="258" font-size="16" font-weight="700" fill="#172933">Публикации</text>
+  <text x="100" y="284" font-size="15" fill="#4f5d63">Няколко варианта на текст</text>
+  <text x="100" y="306" font-size="15" fill="#4f5d63">за една новина</text>
+  <rect x="408" y="224" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="448" cy="276" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <line x1="438" y1="269" x2="458" y2="269" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="438" y1="276" x2="454" y2="276" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="438" y1="283" x2="450" y2="283" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="258" font-size="16" font-weight="700" fill="#172933">Резюме на дълъг текст</text>
+  <text x="484" y="284" font-size="15" fill="#4f5d63">Основните точки от имейл,</text>
+  <text x="484" y="306" font-size="15" fill="#4f5d63">инструкция или документ</text>
+  <rect x="24" y="340" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="64" cy="392" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="53" y="381" width="13" height="13" rx="3" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="390" width="13" height="13" rx="3" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="374" font-size="16" font-weight="700" fill="#172933">Превод</text>
+  <text x="100" y="400" font-size="15" fill="#4f5d63">Важните текстове проверява</text>
+  <text x="100" y="422" font-size="15" fill="#4f5d63">човек, който владее езика</text>
+  <rect x="408" y="340" width="368" height="104" rx="14" fill="#d5f6eb"/>
+  <circle cx="448" cy="392" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M440 401 L442 394 L453 383 L457 387 L446 398 Z" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="374" font-size="16" font-weight="700" fill="#172933">Редакция</text>
+  <text x="484" y="400" font-size="15" fill="#4f5d63">По-кратък, по-учтив</text>
+  <text x="484" y="422" font-size="15" fill="#4f5d63">или по-ясен текст</text>
+  <rect x="24" y="460" width="752" height="72" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="490" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Всеки текст се проверява от човек,</text>
+  <text x="400" y="512" text-anchor="middle" font-size="15" fill="#4f5d63">преди да бъде изпратен на клиент или публикуван.</text>
+</svg>

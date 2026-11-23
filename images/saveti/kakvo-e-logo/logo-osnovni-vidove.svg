@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 468" width="800" height="468" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Трите основни вида лого: словно лого, символ и комбинирано лого, показани с абстрактни форми без реални марки</title>
+  <desc id="d">Три карти: словно лого е само името с подбран шрифт, символът е самостоятелен знак без текст, а комбинираното лого съчетава символ и име; отдолу е отбелязано, че символът може да се използва сам на малки места.</desc>
+  <rect x="1" y="1" width="798" height="466" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Основните видове лого</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Изборът зависи от името и от местата, където знакът ще се показва</text>
+  <rect x="24" y="104" width="240" height="264" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="124" width="200" height="120" rx="12" fill="#ffffff" stroke="#c4e4da" stroke-width="1.2"/>
+  <rect x="87" y="173" width="26" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="119" y="173" width="18" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="143" y="173" width="30" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="179" y="173" width="22" height="22" rx="5" fill="#1f6a66"/>
+  <text x="144" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Словно лого</text>
+  <text x="144" y="310" text-anchor="middle" font-size="14" fill="#4f5d63">Само името, изписано</text>
+  <text x="144" y="332" text-anchor="middle" font-size="14" fill="#4f5d63">с подбран шрифт</text>
+  <rect x="280" y="104" width="240" height="264" rx="14" fill="#d5f6eb"/>
+  <rect x="300" y="124" width="200" height="120" rx="12" fill="#ffffff" stroke="#c4e4da" stroke-width="1.2"/>
+  <circle cx="400" cy="184" r="34" fill="#c9eee4" stroke="#2a8178" stroke-width="2"/>
+  <rect x="384.7" y="168.7" width="30.6" height="30.6" rx="4" fill="none" stroke="#1f6a66" stroke-width="2.5" transform="rotate(45 400 184)"/>
+  <circle cx="400" cy="184" r="6.1" fill="#1f6a66"/>
+  <text x="400" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Символ</text>
+  <text x="400" y="310" text-anchor="middle" font-size="14" fill="#4f5d63">Самостоятелен знак</text>
+  <text x="400" y="332" text-anchor="middle" font-size="14" fill="#4f5d63">без текст</text>
+  <rect x="536" y="104" width="240" height="264" rx="14" fill="#d5f6eb"/>
+  <rect x="556" y="124" width="200" height="120" rx="12" fill="#ffffff" stroke="#c4e4da" stroke-width="1.2"/>
+  <circle cx="593" cy="184" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="2"/>
+  <rect x="583.1" y="174.1" width="19.8" height="19.8" rx="4" fill="none" stroke="#1f6a66" stroke-width="2.5" transform="rotate(45 593 184)"/>
+  <circle cx="593" cy="184" r="4.0" fill="#1f6a66"/>
+  <rect x="627" y="173" width="26" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="659" y="173" width="18" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="683" y="173" width="30" height="22" rx="5" fill="#1f6a66"/>
+  <rect x="719" y="173" width="22" height="22" rx="5" fill="#1f6a66"/>
+  <text x="656" y="282" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Комбинирано лого</text>
+  <text x="656" y="310" text-anchor="middle" font-size="14" fill="#4f5d63">Символ и име заедно</text>
+  <rect x="24" y="384" width="752" height="60" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="420" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Символът може да се използва сам на малки места</text>
+</svg>

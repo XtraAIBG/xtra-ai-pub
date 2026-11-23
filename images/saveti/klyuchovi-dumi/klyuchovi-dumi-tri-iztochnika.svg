@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 452" width="800" height="452" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Три източника на ключови думи без платени програми: въпросите на клиентите, подсказките на Google и отчетът за ефективността в Google Search Console</title>
+  <desc id="d">Три номерирани карти с източниците на думите, с които клиентите търсят, и обща стъпка: един списък с думите и страницата за всяка.</desc>
+  <rect x="1" y="1" width="798" height="450" rx="16" fill="#ffffff" stroke="#dbe6e3" stroke-width="1.5"/>
+  <text x="32" y="50" font-size="22" font-weight="700" fill="#172933">Откъде да вземете думите, с които клиентите Ви търсят</text>
+  <text x="32" y="78" font-size="14" font-weight="400" fill="#4f5d63">Без платени програми: започнете от източниците, които вече имате</text>
+  <rect x="32" y="100" width="234" height="236" rx="14" fill="#d5f6eb"/>
+  <circle cx="66" cy="136" r="18" fill="#2a8178"/>
+  <text x="66" y="141" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="50" y="186" font-size="17" font-weight="700" fill="#172933">Въпросите</text>
+  <text x="50" y="207" font-size="17" font-weight="700" fill="#172933">на клиентите</text>
+  <text x="50" y="240" font-size="13" font-weight="400" fill="#4f5d63">Как питат по телефона,</text>
+  <text x="50" y="260" font-size="13" font-weight="400" fill="#4f5d63">в имейлите и</text>
+  <text x="50" y="280" font-size="13" font-weight="400" fill="#4f5d63">в съобщенията.</text>
+  <text x="50" y="300" font-size="13" font-weight="400" fill="#4f5d63">Важни са думите,</text>
+  <text x="50" y="320" font-size="13" font-weight="400" fill="#4f5d63">които се повтарят.</text>
+  <rect x="283" y="100" width="234" height="236" rx="14" fill="#d0ebfc"/>
+  <circle cx="317" cy="136" r="18" fill="#256f9e"/>
+  <text x="317" y="141" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="301" y="186" font-size="17" font-weight="700" fill="#172933">Подсказките</text>
+  <text x="301" y="207" font-size="17" font-weight="700" fill="#172933">на Google</text>
+  <text x="301" y="240" font-size="13" font-weight="400" fill="#4f5d63">Предложенията под</text>
+  <text x="301" y="260" font-size="13" font-weight="400" fill="#4f5d63">полето за търсене.</text>
+  <text x="301" y="280" font-size="13" font-weight="400" fill="#4f5d63">Според Google отразяват</text>
+  <text x="301" y="300" font-size="13" font-weight="400" fill="#4f5d63">реални търсения.</text>
+  <rect x="534" y="100" width="234" height="236" rx="14" fill="#c9eee4"/>
+  <circle cx="568" cy="136" r="18" fill="#1f6a66"/>
+  <text x="568" y="141" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="552" y="186" font-size="17" font-weight="700" fill="#172933">Google Search</text>
+  <text x="552" y="207" font-size="17" font-weight="700" fill="#172933">Console</text>
+  <text x="552" y="240" font-size="13" font-weight="400" fill="#4f5d63">Отчетът за ефективността</text>
+  <text x="552" y="260" font-size="13" font-weight="400" fill="#4f5d63">(Performance) по заявки.</text>
+  <text x="552" y="280" font-size="13" font-weight="400" fill="#4f5d63">По подразбиране показва</text>
+  <text x="552" y="300" font-size="13" font-weight="400" fill="#4f5d63">последните три месеца.</text>
+  <line x1="400" y1="336" x2="400" y2="359" stroke="#1f6a66" stroke-width="2"/>
+  <path d="M394 357 L406 357 L400 366 Z" fill="#1f6a66"/>
+  <rect x="32" y="368" width="736" height="64" rx="14" fill="#f4f8f7" stroke="#dbe6e3" stroke-width="1"/>
+  <text x="56" y="396" font-size="16" font-weight="700" fill="#172933">Съберете думите в един списък</text>
+  <text x="56" y="418" font-size="14" font-weight="400" fill="#4f5d63">и до всяка отбележете за коя страница от сайта е подходяща</text>
+</svg>

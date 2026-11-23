@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 488" width="800" height="488" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Пет места за основната ключова дума: заглавието на страницата (title), основното заглавие (H1), първият абзац, едно от подзаглавията и краткото описание (meta description)</title>
+  <desc id="d">Опростена схема на резултат в търсенето и на страница с номерирани места, на които да поставите основната дума.</desc>
+  <rect x="1" y="1" width="798" height="486" rx="16" fill="#ffffff" stroke="#dbe6e3" stroke-width="1.5"/>
+  <text x="32" y="50" font-size="22" font-weight="700" fill="#172933">Къде да поставите основната дума</text>
+  <text x="32" y="78" font-size="14" font-weight="400" fill="#4f5d63">Използвайте я естествено, така както бихте я казали на клиент</text>
+  <rect x="32" y="100" width="340" height="300" rx="14" fill="#f4f8f7" stroke="#dbe6e3" stroke-width="1"/>
+  <text x="52" y="132" font-size="16" font-weight="700" fill="#1f6a66">В резултатите от търсенето</text>
+  <rect x="52" y="152" width="300" height="228" rx="12" fill="#ffffff" stroke="#dbe6e3" stroke-width="1"/>
+  <rect x="68" y="170" width="140" height="10" rx="5" fill="#e3ebe9"/>
+  <rect x="68" y="192" width="268" height="44" rx="10" fill="#d0ebfc"/>
+  <circle cx="90" cy="214" r="13" fill="#256f9e"/>
+  <text x="90" y="219" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="112" y="219" font-size="15" font-weight="700" fill="#172933">Заглавие (title)</text>
+  <rect x="68" y="252" width="268" height="64" rx="10" fill="#d5f6eb"/>
+  <circle cx="90" cy="274" r="13" fill="#2a8178"/>
+  <text x="90" y="279" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="112" y="279" font-size="15" font-weight="700" fill="#172933">Кратко описание</text>
+  <text x="112" y="301" font-size="14" font-weight="400" fill="#4f5d63">(meta description)</text>
+  <rect x="68" y="332" width="252" height="10" rx="5" fill="#e3ebe9"/>
+  <rect x="68" y="352" width="200" height="10" rx="5" fill="#e3ebe9"/>
+  <rect x="396" y="100" width="372" height="300" rx="14" fill="#f4f8f7" stroke="#dbe6e3" stroke-width="1"/>
+  <text x="416" y="132" font-size="16" font-weight="700" fill="#1f6a66">На страницата</text>
+  <rect x="416" y="152" width="332" height="228" rx="12" fill="#ffffff" stroke="#dbe6e3" stroke-width="1"/>
+  <path d="M416 186 L416 164 Q416 152 428 152 L736 152 Q748 152 748 164 L748 186 Z" fill="#e3ebe9"/>
+  <rect x="428" y="158" width="230" height="28" rx="8" fill="#d0ebfc"/>
+  <circle cx="446" cy="172" r="11" fill="#256f9e"/>
+  <text x="446" y="177" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="464" y="177" font-size="14" font-weight="600" fill="#172933">Раздел на браузъра</text>
+  <rect x="432" y="198" width="300" height="38" rx="10" fill="#d5f6eb"/>
+  <circle cx="452" cy="217" r="13" fill="#2a8178"/>
+  <text x="452" y="222" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="474" y="222" font-size="15" font-weight="700" fill="#172933">Основно заглавие (H1)</text>
+  <rect x="432" y="246" width="300" height="52" rx="10" fill="#d0ebfc"/>
+  <circle cx="452" cy="272" r="13" fill="#256f9e"/>
+  <text x="452" y="277" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="474" y="268" font-size="15" font-weight="700" fill="#172933">Първият абзац</text>
+  <rect x="474" y="280" width="200" height="8" rx="4" fill="#ffffff"/>
+  <rect x="432" y="308" width="300" height="32" rx="10" fill="#d5f6eb"/>
+  <circle cx="452" cy="324" r="13" fill="#2a8178"/>
+  <text x="452" y="329" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="474" y="329" font-size="15" font-weight="700" fill="#172933">Едно от подзаглавията</text>
+  <rect x="432" y="350" width="260" height="10" rx="5" fill="#e3ebe9"/>
+  <text x="32" y="432" font-size="14" font-weight="400" fill="#4f5d63">Заглавието (title) се вижда в резултатите от търсенето и в раздела на браузъра.</text>
+  <text x="32" y="460" font-size="14" font-weight="400" fill="#4f5d63">Близките фрази могат да стоят в останалите подзаглавия.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 384" width="760" height="384" role="img" aria-labelledby="t d">
+  <title id="t">Социалните мрежи в България през 2025 г.: около 71% от хората на възраст от 16 до 74 години и около 42% от фирмите с 10 или повече заети при около 64% средно в ЕС</title>
+  <desc id="d">Хоризонтални ленти по данни на НСИ и Eurostat за 2025 г.: дял на хората, участвали в социалните мрежи, и дял на фирмите с 10 или повече заети, използвали социални медии, в България и средно в Европейския съюз.</desc>
+  <rect x="1" y="1" width="758" height="382" rx="16" fill="#ffffff" stroke="#c9eee4" stroke-width="1.5"/>
+  <text x="40" y="50" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="700" fill="#172933">Социалните мрежи в България през 2025 г.</text>
+  <text x="40" y="98" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f6a66">Хора от 16 до 74 години, участвали в социалните мрежи</text>
+  <text x="40" y="136" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">България</text>
+  <rect x="220" y="117" width="500" height="28" rx="8" fill="#d5f6eb" fill-opacity="0.6"/>
+  <rect x="220" y="117" width="355" height="28" rx="8" fill="#2a8178"/>
+  <text x="563" y="136" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff">около 71%</text>
+  <text x="40" y="190" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f6a66">Фирми с 10 или повече заети, използвали социални медии</text>
+  <text x="40" y="228" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">България</text>
+  <rect x="220" y="209" width="500" height="28" rx="8" fill="#d5f6eb" fill-opacity="0.6"/>
+  <rect x="220" y="209" width="210" height="28" rx="8" fill="#2a8178"/>
+  <text x="418" y="228" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff">около 42%</text>
+  <text x="40" y="272" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Средно в ЕС</text>
+  <rect x="220" y="253" width="500" height="28" rx="8" fill="#d5f6eb" fill-opacity="0.6"/>
+  <rect x="220" y="253" width="320" height="28" rx="8" fill="#256f9e"/>
+  <text x="528" y="272" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff">около 64%</text>
+  <text x="40" y="318" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#4f5d63">За фирмите с по-малко от 10 заети в тази статистика няма отделна цифра.</text>
+  <line x1="40" y1="336" x2="720" y2="336" stroke="#c9eee4" stroke-width="1.5"/>
+  <text x="40" y="360" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#4f5d63">Източник: НСИ и Eurostat, данни за 2025 г.</text>
+</svg>

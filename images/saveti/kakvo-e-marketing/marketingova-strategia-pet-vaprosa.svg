@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 612" width="800" height="612" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Проста маркетингова стратегия в пет въпроса: кой е клиентът, какъв проблем решавате, защо да избере Вас, кои канали ще използвате и какво ще измервате</title>
+  <desc id="d">Пет номерирани реда с въпросите на стратегията и кратко пояснение към всеки; отдолу е отбелязано, че отговорите се записват и след месец се сравняват с резултата.</desc>
+  <rect x="1" y="1" width="798" height="610" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Проста маркетингова стратегия в пет въпроса</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Отговорите се побират на една страница</text>
+  <!-- row 1 -->
+  <rect x="24" y="104" width="752" height="72" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="140" r="20" fill="#2a8178"/>
+  <text x="62" y="146" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">1</text>
+  <text x="98" y="146" font-size="16" font-weight="700" fill="#172933">Кой е клиентът?</text>
+  <line x1="392" y1="120" x2="392" y2="160" stroke="#2a8178" stroke-width="1.2" opacity="0.5"/>
+  <text x="412" y="135" font-size="15" fill="#4f5d63">Кой е, къде се намира</text>
+  <text x="412" y="157" font-size="15" fill="#4f5d63">и кога Ви търси</text>
+  <!-- row 2 -->
+  <rect x="24" y="188" width="752" height="72" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="224" r="20" fill="#2a8178"/>
+  <text x="62" y="230" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">2</text>
+  <text x="98" y="230" font-size="16" font-weight="700" fill="#172933">Какъв проблем решавате?</text>
+  <line x1="392" y1="204" x2="392" y2="244" stroke="#2a8178" stroke-width="1.2" opacity="0.5"/>
+  <text x="412" y="219" font-size="15" fill="#4f5d63">Защо идва при Вас,</text>
+  <text x="412" y="241" font-size="15" fill="#4f5d63">с думите на клиента</text>
+  <!-- row 3 -->
+  <rect x="24" y="272" width="752" height="72" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="308" r="20" fill="#2a8178"/>
+  <text x="62" y="314" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">3</text>
+  <text x="98" y="314" font-size="16" font-weight="700" fill="#172933">Защо да избере Вас?</text>
+  <line x1="392" y1="288" x2="392" y2="328" stroke="#2a8178" stroke-width="1.2" opacity="0.5"/>
+  <text x="412" y="303" font-size="15" fill="#4f5d63">Какво правите различно</text>
+  <text x="412" y="325" font-size="15" fill="#4f5d63">от другите наоколо</text>
+  <!-- row 4 -->
+  <rect x="24" y="356" width="752" height="72" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="392" r="20" fill="#2a8178"/>
+  <text x="62" y="398" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">4</text>
+  <text x="98" y="398" font-size="16" font-weight="700" fill="#172933">Кои канали ще използвате?</text>
+  <line x1="392" y1="372" x2="392" y2="412" stroke="#2a8178" stroke-width="1.2" opacity="0.5"/>
+  <text x="412" y="387" font-size="15" fill="#4f5d63">Един или два начина, които</text>
+  <text x="412" y="409" font-size="15" fill="#4f5d63">можете да поддържате редовно</text>
+  <!-- row 5 -->
+  <rect x="24" y="440" width="752" height="72" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="476" r="20" fill="#2a8178"/>
+  <text x="62" y="482" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">5</text>
+  <text x="98" y="482" font-size="16" font-weight="700" fill="#172933">Какво ще измервате?</text>
+  <line x1="392" y1="456" x2="392" y2="496" stroke="#2a8178" stroke-width="1.2" opacity="0.5"/>
+  <text x="412" y="471" font-size="15" fill="#4f5d63">Запитвания, поръчки, върнали се</text>
+  <text x="412" y="493" font-size="15" fill="#4f5d63">клиенти и откъде са дошли</text>
+  <rect x="24" y="524" width="752" height="64" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="551" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Запишете отговорите.</text>
+  <text x="400" y="573" text-anchor="middle" font-size="15" fill="#4f5d63">След месец сравнете плана с това, което се е случило.</text>
+</svg>

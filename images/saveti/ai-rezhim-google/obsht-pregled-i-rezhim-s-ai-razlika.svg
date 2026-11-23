@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 584" width="800" height="584" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Сравнение между общия преглед, създаден от AI (AI Overviews), и режима с AI (AI Mode) в Google Търсене</title>
+  <desc id="d">Две колони показват кога се появява и какво дава всяка от двете функции; отдолу е отбелязано, че отговорите и връзките в тях се различават и че на мобилно устройство от общия преглед може да се премине към режима с AI със запазен контекст.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="582" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Общ преглед, създаден от AI, и режим с AI</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">С какво се различават двете функции в Google Търсене</text>
+
+  <!-- column 1: AI Overviews -->
+  <rect x="24" y="104" width="364" height="308" rx="14" fill="#d5f6eb"/>
+  <text x="44" y="140" font-size="17" font-weight="700" fill="#172933">Общ преглед, създаден от AI</text>
+  <text x="44" y="162" font-size="14" font-weight="600" fill="#1f6a66">AI Overviews</text>
+  <line x1="44" y1="180" x2="368" y2="180" stroke="#2a8178" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <circle cx="50" cy="205" r="4" fill="#2a8178"/>
+  <text x="64" y="210" font-size="15" fill="#172933">Появява се сред обикновените</text>
+  <text x="64" y="231" font-size="15" fill="#172933">резултати при част от търсенията</text>
+
+  <circle cx="50" cy="261" r="4" fill="#2a8178"/>
+  <text x="64" y="266" font-size="15" fill="#172933">Обобщава основната информация</text>
+  <text x="64" y="287" font-size="15" fill="#172933">с ключови данни и връзки</text>
+
+  <circle cx="50" cy="317" r="4" fill="#2a8178"/>
+  <text x="64" y="322" font-size="15" fill="#172933">Бърза представа за темата,</text>
+  <text x="64" y="343" font-size="15" fill="#172933">от която може да се продължи</text>
+  <text x="64" y="364" font-size="15" fill="#172933">към връзките</text>
+
+  <!-- column 2: AI Mode -->
+  <rect x="412" y="104" width="364" height="308" rx="14" fill="#d0ebfc"/>
+  <text x="432" y="140" font-size="17" font-weight="700" fill="#172933">Режим с AI</text>
+  <text x="432" y="162" font-size="14" font-weight="600" fill="#256f9e">AI Mode</text>
+  <line x1="432" y1="180" x2="756" y2="180" stroke="#256f9e" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <circle cx="438" cy="205" r="4" fill="#256f9e"/>
+  <text x="452" y="210" font-size="15" fill="#172933">Отговор, който може да продължи</text>
+  <text x="452" y="231" font-size="15" fill="#172933">с последващи въпроси</text>
+
+  <circle cx="438" cy="261" r="4" fill="#256f9e"/>
+  <text x="452" y="266" font-size="15" fill="#172933">Полезен при въпроси, които</text>
+  <text x="452" y="287" font-size="15" fill="#172933">изискват повече проучване,</text>
+  <text x="452" y="308" font-size="15" fill="#172933">разсъждение или сложно</text>
+  <text x="452" y="329" font-size="15" fill="#172933">сравнение на варианти</text>
+
+  <circle cx="438" cy="359" r="4" fill="#256f9e"/>
+  <text x="452" y="364" font-size="15" fill="#172933">В самия отговор има връзки</text>
+  <text x="452" y="385" font-size="15" fill="#172933">към полезни сайтове</text>
+
+  <!-- note: different answers -->
+  <rect x="24" y="428" width="752" height="60" rx="12" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <circle cx="54" cy="458" r="12" fill="none" stroke="#1f6a66" stroke-width="2"/>
+  <line x1="54" y1="452" x2="54" y2="460" stroke="#1f6a66" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="54" cy="465" r="1.6" fill="#1f6a66"/>
+  <text x="80" y="453" font-size="15" font-weight="600" fill="#172933">Двете функции могат да използват различни модели и подходи,</text>
+  <text x="80" y="475" font-size="15" fill="#4f5d63">затова отговорите и връзките в тях се различават.</text>
+
+  <!-- note: mobile switch -->
+  <rect x="24" y="500" width="752" height="60" rx="12" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <rect x="46" y="516" width="16" height="28" rx="4" fill="none" stroke="#1f6a66" stroke-width="2"/>
+  <line x1="51" y1="539" x2="57" y2="539" stroke="#1f6a66" stroke-width="2" stroke-linecap="round"/>
+  <text x="80" y="525" font-size="15" font-weight="600" fill="#172933">На мобилно устройство от общия преглед може да се премине</text>
+  <text x="80" y="547" font-size="15" fill="#4f5d63">към режима с AI, като контекстът от първото търсене се запазва.</text>
+</svg>

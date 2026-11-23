@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 584" width="800" height="584" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Петте стъпки при регистрация на домейн: избор на име и окончание, профил при регистратор на името на бизнеса, заявка с данните на фирмата като регистрант, идентификация и плащане</title>
+  <desc id="d">Номерирани стъпки показват как се регистрира домейн чрез регистратор, с определение на регистранта отгоре и бележка да проверите цените при избрания регистратор.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="582" rx="16" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+
+  <!-- title -->
+  <text x="40" y="56" font-size="22" font-weight="700" fill="#172933">Как става регистрацията на домейн</text>
+  <text x="40" y="84" font-size="15" fill="#4f5d63">Заявката се попълва онлайн през сайта на регистратор</text>
+
+  <!-- registrant definition -->
+  <rect x="40" y="104" width="720" height="48" rx="12" fill="#d0ebfc"/>
+  <text x="60" y="134" font-size="15" fill="#172933"><tspan font-weight="700" fill="#256f9e">Регистрант:</tspan> лицето или фирмата, на чието име е регистриран домейнът</text>
+
+  <!-- connector behind the step cards -->
+  <line x1="76" y1="202" x2="76" y2="490" stroke="#2a8178" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- step 1 -->
+  <rect x="40" y="172" width="720" height="60" rx="12" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+  <circle cx="76" cy="202" r="17" fill="#2a8178"/>
+  <text x="76" y="208" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">1</text>
+  <text x="112" y="198" font-size="16" font-weight="700" fill="#172933">Изберете име и окончание</text>
+  <text x="112" y="219" font-size="14" fill="#4f5d63">и проверете дали са свободни</text>
+
+  <!-- step 2 -->
+  <rect x="40" y="244" width="720" height="60" rx="12" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+  <circle cx="76" cy="274" r="17" fill="#2a8178"/>
+  <text x="76" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">2</text>
+  <text x="112" y="270" font-size="16" font-weight="700" fill="#172933">Изберете регистратор</text>
+  <text x="112" y="291" font-size="14" fill="#4f5d63">и създайте профил на името на бизнеса</text>
+
+  <!-- step 3 -->
+  <rect x="40" y="316" width="720" height="60" rx="12" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+  <circle cx="76" cy="346" r="17" fill="#2a8178"/>
+  <text x="76" y="352" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">3</text>
+  <text x="112" y="342" font-size="16" font-weight="700" fill="#172933">Попълнете заявката</text>
+  <text x="112" y="363" font-size="14" fill="#4f5d63">с данните на фирмата като регистрант</text>
+
+  <!-- step 4 -->
+  <rect x="40" y="388" width="720" height="60" rx="12" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+  <circle cx="76" cy="418" r="17" fill="#2a8178"/>
+  <text x="76" y="424" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">4</text>
+  <text x="112" y="414" font-size="16" font-weight="700" fill="#172933">Предоставете данните и документите за идентификация,</text>
+  <text x="112" y="435" font-size="14" fill="#4f5d63">които регистраторът поиска</text>
+
+  <!-- step 5 -->
+  <rect x="40" y="460" width="720" height="60" rx="12" fill="#ffffff" stroke="#d9e6e3" stroke-width="1.5"/>
+  <circle cx="76" cy="490" r="17" fill="#1f6a66"/>
+  <text x="76" y="496" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">5</text>
+  <text x="112" y="486" font-size="16" font-weight="700" fill="#172933">Платете</text>
+  <text x="112" y="507" font-size="14" fill="#4f5d63">и запазете потвърждението и данните за достъп до профила</text>
+
+  <!-- footer note -->
+  <text x="40" y="552" font-size="14" fill="#4f5d63">Цените и условията за плащане проверете при избрания регистратор</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 584" width="800" height="584" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Какво да не поставяте в разговора с ChatGPT и как да подготвите текста: лични данни, пароли, банкови данни, поверителни договори и вътрешна информация остават извън разговора</title>
+  <desc id="d">Две колони: вляво шест вида информация, които не се поставят в разговора, вдясно как да подготвите въпроса и къде е настройката за обучение на моделите; отдолу е отбелязано, че изключената настройка не позволява поставяне на лични или поверителни данни.</desc>
+  <rect x="1" y="1" width="798" height="582" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Какво да не поставяте в разговора</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Премахнете всичко, което не бихте изпратили на външен човек</text>
+  <rect x="24" y="104" width="368" height="380" rx="14" fill="#d0ebfc"/>
+  <circle cx="60" cy="138" r="16" fill="#ffffff" stroke="#256f9e" stroke-width="1.5"/>
+  <line x1="54" y1="132" x2="66" y2="144" stroke="#256f9e" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="66" y1="132" x2="54" y2="144" stroke="#256f9e" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="86" y="144" font-size="16" font-weight="700" fill="#172933">Не поставяйте в разговора</text>
+  <rect x="408" y="104" width="368" height="380" rx="14" fill="#d5f6eb"/>
+  <circle cx="444" cy="138" r="16" fill="#ffffff" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M437 138 L442 143 L451 133" fill="none" stroke="#1f6a66" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="470" y="144" font-size="16" font-weight="700" fill="#172933">Поставете вместо това</text>
+  <circle cx="52" cy="181" r="4" fill="#256f9e"/>
+  <text x="68" y="186" font-size="15" fill="#172933">Лични данни на клиенти</text>
+  <text x="68" y="207" font-size="15" fill="#172933">и служители</text>
+  <circle cx="52" cy="231" r="4" fill="#256f9e"/>
+  <text x="68" y="236" font-size="15" fill="#172933">Пароли и кодове</text>
+  <text x="68" y="257" font-size="15" fill="#172933">за достъп</text>
+  <circle cx="52" cy="281" r="4" fill="#256f9e"/>
+  <text x="68" y="286" font-size="15" fill="#172933">Номера на банкови</text>
+  <text x="68" y="307" font-size="15" fill="#172933">карти и сметки</text>
+  <circle cx="52" cy="331" r="4" fill="#256f9e"/>
+  <text x="68" y="336" font-size="15" fill="#172933">Поверителни договори,</text>
+  <text x="68" y="357" font-size="15" fill="#172933">цени и условия</text>
+  <circle cx="52" cy="381" r="4" fill="#256f9e"/>
+  <text x="68" y="386" font-size="15" fill="#172933">Вътрешни финансови</text>
+  <text x="68" y="407" font-size="15" fill="#172933">данни</text>
+  <circle cx="52" cy="431" r="4" fill="#256f9e"/>
+  <text x="68" y="436" font-size="15" fill="#172933">Непублична информация</text>
+  <text x="68" y="457" font-size="15" fill="#172933">за доставчици</text>
+  <circle cx="436" cy="181" r="4" fill="#2a8178"/>
+  <text x="452" y="186" font-size="15" fill="#172933">„клиентът“ вместо</text>
+  <text x="452" y="207" font-size="15" fill="#172933">името на клиента</text>
+  <circle cx="436" cy="231" r="4" fill="#2a8178"/>
+  <text x="452" y="236" font-size="15" fill="#172933">Без телефона и</text>
+  <text x="452" y="257" font-size="15" fill="#172933">номера на поръчката</text>
+  <circle cx="436" cy="281" r="4" fill="#2a8178"/>
+  <text x="452" y="286" font-size="15" fill="#172933">Само самия въпрос</text>
+  <rect x="424" y="352" width="336" height="120" rx="12" fill="#ffffff"/>
+  <text x="444" y="382" font-size="15" font-weight="700" fill="#172933">Обучение на моделите</text>
+  <text x="444" y="406" font-size="15" fill="#4f5d63">Settings &gt; Data controls:</text>
+  <text x="444" y="430" font-size="15" fill="#4f5d63">изключете „Improve the</text>
+  <text x="444" y="452" font-size="15" fill="#4f5d63">model for everyone“</text>
+  <rect x="24" y="496" width="752" height="64" rx="12" fill="#c9eee4"/>
+  <text x="400" y="522" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Изключената настройка не означава,</text>
+  <text x="400" y="544" text-anchor="middle" font-size="15" fill="#4f5d63">че можете да поставяте лични или поверителни данни.</text>
+</svg>

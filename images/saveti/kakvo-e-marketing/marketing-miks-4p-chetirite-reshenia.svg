@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 568" width="800" height="568" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Маркетинг микс в модела 4P: продукт, цена, място и популяризиране, четирите решения за това, което продавате</title>
+  <desc id="d">Четири карти с решенията продукт, цена, място и популяризиране и кратко обяснение на всяко; отдолу е отбелязано, че решенията зависят едно от друго и е добре да започнете от клиента.</desc>
+  <rect x="1" y="1" width="798" height="566" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Маркетинг микс: моделът 4P</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Четирите решения за това, което продавате</text>
+  <!-- product -->
+  <rect x="24" y="104" width="368" height="172" rx="14" fill="#d5f6eb"/>
+  <circle cx="66" cy="146" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="57" y="139" width="18" height="16" rx="2" fill="none" stroke="#1f6a66" stroke-width="2"/><line x1="57" y1="144" x2="75" y2="144" stroke="#1f6a66" stroke-width="2"/><line x1="66" y1="139" x2="66" y2="144" stroke="#1f6a66" stroke-width="2"/>
+  <text x="102" y="152" font-size="17" font-weight="700" fill="#172933">Продукт (product)</text>
+  <text x="46" y="202" font-size="15" fill="#4f5d63">Какво точно предлагате:</text>
+  <text x="46" y="226" font-size="15" fill="#4f5d63">услугата или стоката, качеството</text>
+  <text x="46" y="250" font-size="15" fill="#4f5d63">и обслужването около тях</text>
+  <!-- price -->
+  <rect x="408" y="104" width="368" height="172" rx="14" fill="#d5f6eb"/>
+  <circle cx="450" cy="146" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M440 145 L449 136 L459 136 L459 146 L450 155 Z" fill="none" stroke="#1f6a66" stroke-width="2" stroke-linejoin="round"/><circle cx="454" cy="141" r="2" fill="#1f6a66"/>
+  <text x="486" y="152" font-size="17" font-weight="700" fill="#172933">Цена (price)</text>
+  <text x="430" y="202" font-size="15" fill="#4f5d63">Колко струва за клиента, как я</text>
+  <text x="430" y="226" font-size="15" fill="#4f5d63">съобщавате и как се сравнява</text>
+  <text x="430" y="250" font-size="15" fill="#4f5d63">с подобните предложения наоколо</text>
+  <!-- place -->
+  <rect x="24" y="292" width="368" height="172" rx="14" fill="#d5f6eb"/>
+  <circle cx="66" cy="334" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M56 333 L66 324 L76 333" fill="none" stroke="#1f6a66" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><rect x="59" y="333" width="14" height="11" fill="none" stroke="#1f6a66" stroke-width="2"/><rect x="64" y="338" width="4" height="6" fill="#1f6a66"/>
+  <text x="102" y="340" font-size="17" font-weight="700" fill="#172933">Място (place)</text>
+  <text x="46" y="390" font-size="15" fill="#4f5d63">Къде и как клиентът купува:</text>
+  <text x="46" y="414" font-size="15" fill="#4f5d63">в обекта, по телефона, в онлайн</text>
+  <text x="46" y="438" font-size="15" fill="#4f5d63">магазин или с доставка</text>
+  <!-- promo -->
+  <rect x="408" y="292" width="368" height="172" rx="14" fill="#d5f6eb"/>
+  <circle cx="450" cy="334" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M441 330 L447 330 L457 324 L457 344 L447 338 L441 338 Z" fill="none" stroke="#1f6a66" stroke-width="2" stroke-linejoin="round"/>
+  <text x="486" y="340" font-size="17" font-weight="700" fill="#172933">Популяризиране (promotion)</text>
+  <text x="430" y="390" font-size="15" fill="#4f5d63">Как хората научават за Вас:</text>
+  <text x="430" y="414" font-size="15" fill="#4f5d63">витрина, препоръки, профил</text>
+  <text x="430" y="438" font-size="15" fill="#4f5d63">в Google, реклами и публикации</text>
+  <rect x="24" y="480" width="752" height="64" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="507" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Четирите решения зависят едно от друго.</text>
+  <text x="400" y="529" text-anchor="middle" font-size="15" fill="#4f5d63">Започнете от клиента и проверете дали решенията си пасват.</text>
+</svg>

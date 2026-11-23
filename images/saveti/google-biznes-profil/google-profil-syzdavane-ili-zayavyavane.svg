@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Път към Google бизнес профил: проверете в Google Карти, после създайте нов профил или заявете съществуващия и накрая потвърдете бизнеса</title>
+  <desc id="d">Схема с две разклонения, създаване на нов профил и заявяване на съществуващ, които водят до потвърждаване на профила.</desc>
+  <rect x="1" y="1" width="798" height="558" rx="16" fill="#ffffff" stroke="#dbe6e3" stroke-width="1.5"/>
+  <text x="32" y="50" font-size="22" font-weight="700" fill="#172933">Нов профил или заявяване на съществуващ</text>
+  <rect x="32" y="72" width="736" height="58" rx="14" fill="#f4f8f7" stroke="#dbe6e3" stroke-width="1"/>
+  <circle cx="64" cy="101" r="16" fill="#1f6a66"/>
+  <text x="64" y="106" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">?</text>
+  <text x="92" y="99" font-size="15" font-weight="600" fill="#172933">Проверете дали бизнесът Ви вече се показва в Google Карти</text>
+  <text x="92" y="119" font-size="14" font-weight="400" fill="#4f5d63">Потърсете името на бизнеса и града</text>
+  <line x1="208" y1="130" x2="208" y2="155" stroke="#2a8178" stroke-width="2"/>
+  <path d="M202 153 L214 153 L208 162 Z" fill="#2a8178"/>
+  <line x1="592" y1="130" x2="592" y2="155" stroke="#2a8178" stroke-width="2"/>
+  <path d="M586 153 L598 153 L592 162 Z" fill="#2a8178"/>
+  <rect x="32" y="164" width="352" height="276" rx="14" fill="#d5f6eb"/>
+  <text x="52" y="196" font-size="17" font-weight="700" fill="#2a8178">Няма профил: създайте го</text>
+  <rect x="48" y="220" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="76" cy="250" r="16" fill="#2a8178"/>
+  <text x="76" y="255" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="102" y="246" font-size="14" font-weight="600" fill="#172933">Отворете страницата на Google</text>
+  <text x="102" y="266" font-size="14" font-weight="400" fill="#4f5d63">за добавяне на бизнес</text>
+  <rect x="48" y="290" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="76" cy="320" r="16" fill="#2a8178"/>
+  <text x="76" y="325" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="102" y="316" font-size="14" font-weight="600" fill="#172933">Въведете данните на бизнеса</text>
+  <text x="102" y="336" font-size="14" font-weight="400" fill="#4f5d63">по инструкциите на екрана</text>
+  <rect x="48" y="360" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="76" cy="390" r="16" fill="#2a8178"/>
+  <text x="76" y="395" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="102" y="386" font-size="14" font-weight="600" fill="#172933">Изберете начин</text>
+  <text x="102" y="406" font-size="14" font-weight="400" fill="#4f5d63">за потвърждаване</text>
+  <rect x="416" y="164" width="352" height="276" rx="14" fill="#d0ebfc"/>
+  <text x="436" y="196" font-size="17" font-weight="700" fill="#256f9e">Вече е в Карти: заявете го</text>
+  <rect x="432" y="220" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="460" cy="250" r="16" fill="#256f9e"/>
+  <text x="460" y="255" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="486" y="246" font-size="14" font-weight="600" fill="#172933">Отворете Google Карти</text>
+  <text x="486" y="266" font-size="14" font-weight="400" fill="#4f5d63">от компютър</text>
+  <rect x="432" y="290" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="460" cy="320" r="16" fill="#256f9e"/>
+  <text x="460" y="325" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="486" y="316" font-size="14" font-weight="600" fill="#172933">Потърсете името</text>
+  <text x="486" y="336" font-size="14" font-weight="400" fill="#4f5d63">на бизнеса и града</text>
+  <rect x="432" y="360" width="320" height="60" rx="12" fill="#ffffff"/>
+  <circle cx="460" cy="390" r="16" fill="#256f9e"/>
+  <text x="460" y="395" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="486" y="386" font-size="14" font-weight="600" fill="#172933">Изберете „Заявяване</text>
+  <text x="486" y="406" font-size="14" font-weight="400" fill="#4f5d63">на този бизнес“</text>
+  <line x1="208" y1="440" x2="208" y2="463" stroke="#1f6a66" stroke-width="2"/>
+  <path d="M202 461 L214 461 L208 470 Z" fill="#1f6a66"/>
+  <line x1="592" y1="440" x2="592" y2="463" stroke="#1f6a66" stroke-width="2"/>
+  <path d="M586 461 L598 461 L592 470 Z" fill="#1f6a66"/>
+  <rect x="32" y="472" width="736" height="68" rx="14" fill="#1f6a66"/>
+  <text x="56" y="500" font-size="17" font-weight="700" fill="#ffffff">Потвърждаване на профила</text>
+  <text x="56" y="524" font-size="14" font-weight="400" fill="#ffffff">Според Google прегледите отнемат до 5 работни дни, в редки случаи и повече.</text>
+</svg>

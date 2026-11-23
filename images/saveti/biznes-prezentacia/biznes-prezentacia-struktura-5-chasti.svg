@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 666" width="800" height="666" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Петте части на бизнес презентацията като поредица от слайдове: проблем, предложение, как работи, доказателства и следваща стъпка</title>
+  <desc id="d">Пет номерирани слайда един под друг, всеки с името на частта и кратко обяснение; отдолу е отбелязано, че историята на фирмата и списъкът с услуги са по-полезни в края или в отделно приложение.</desc>
+  <rect x="1" y="1" width="798" height="664" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Каква структура да има бизнес презентацията</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Пет части в реда, в който слушателят си задава въпросите</text>
+  <!-- slide 1 -->
+  <rect x="24" y="108" width="752" height="76" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="126.0" width="56" height="40" rx="6" fill="#ffffff" stroke="#2a8178" stroke-width="1.6"/>
+  <text x="72" y="153.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1f6a66">1</text>
+  <text x="124" y="152.0" font-size="16" font-weight="700" fill="#172933">Проблемът</text>
+  <text x="330" y="142.0" font-size="15" fill="#4f5d63">Ситуацията, която клиентът познава,</text>
+  <text x="330" y="164.0" font-size="15" fill="#4f5d63">и какво му струва тя в ежедневната работа</text>
+  <path d="M72 185 L72 195" stroke="#2a8178" stroke-width="2" stroke-linecap="round"/>
+  <!-- slide 2 -->
+  <rect x="24" y="196" width="752" height="76" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="214.0" width="56" height="40" rx="6" fill="#ffffff" stroke="#2a8178" stroke-width="1.6"/>
+  <text x="72" y="241.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1f6a66">2</text>
+  <text x="124" y="240.0" font-size="16" font-weight="700" fill="#172933">Предложението</text>
+  <text x="330" y="230.0" font-size="15" fill="#4f5d63">Какво предлагате,</text>
+  <text x="330" y="252.0" font-size="15" fill="#4f5d63">казано с няколко думи</text>
+  <path d="M72 273 L72 283" stroke="#2a8178" stroke-width="2" stroke-linecap="round"/>
+  <!-- slide 3 -->
+  <rect x="24" y="284" width="752" height="76" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="302.0" width="56" height="40" rx="6" fill="#ffffff" stroke="#2a8178" stroke-width="1.6"/>
+  <text x="72" y="329.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1f6a66">3</text>
+  <text x="124" y="328.0" font-size="16" font-weight="700" fill="#172933">Как работи</text>
+  <text x="330" y="318.0" font-size="15" fill="#4f5d63">Стъпките, по които ще се случи, и какво</text>
+  <text x="330" y="340.0" font-size="15" fill="#4f5d63">остава под контрола на клиента</text>
+  <path d="M72 361 L72 371" stroke="#2a8178" stroke-width="2" stroke-linecap="round"/>
+  <!-- slide 4 -->
+  <rect x="24" y="372" width="752" height="98" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="401.0" width="56" height="40" rx="6" fill="#ffffff" stroke="#2a8178" stroke-width="1.6"/>
+  <text x="72" y="428.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1f6a66">4</text>
+  <text x="124" y="427.0" font-size="16" font-weight="700" fill="#172933">Доказателства</text>
+  <text x="330" y="401.0" font-size="15" fill="#4f5d63">Реални примери от Вашата работа или данни,</text>
+  <text x="330" y="423.0" font-size="15" fill="#4f5d63">които можете да покажете при въпрос.</text>
+  <text x="330" y="445.0" font-size="15" fill="#4f5d63">Не добавяйте числа, които нямате.</text>
+  <path d="M72 471 L72 481" stroke="#2a8178" stroke-width="2" stroke-linecap="round"/>
+  <!-- slide 5 -->
+  <rect x="24" y="482" width="752" height="76" rx="14" fill="#d5f6eb"/>
+  <rect x="44" y="500" width="56" height="40" rx="6" fill="#ffffff" stroke="#2a8178" stroke-width="1.6"/>
+  <text x="72" y="527" text-anchor="middle" font-size="20" font-weight="700" fill="#1f6a66">5</text>
+  <text x="124" y="526" font-size="16" font-weight="700" fill="#172933">Следващата стъпка</text>
+  <text x="330" y="516" font-size="15" fill="#4f5d63">Какво предлагате да се случи след срещата</text>
+  <text x="330" y="538" font-size="15" fill="#4f5d63">и кой какво поема</text>
+  <rect x="24" y="570" width="752" height="72" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="600" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Историята на фирмата и списъкът с всички услуги обикновено са</text>
+  <text x="400" y="622" text-anchor="middle" font-size="15" fill="#4f5d63">по-полезни в края или в отделно приложение</text>
+</svg>

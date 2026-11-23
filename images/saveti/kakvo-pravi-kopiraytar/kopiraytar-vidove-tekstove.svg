@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 528" width="800" height="528" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Шестте вида текстове, които копирайтърът пише за малкия бизнес: текстове за сайта, описания на продукти, статии за блога, рекламни текстове, публикации в социалните мрежи, имейли и бюлетини</title>
+  <desc id="d">Шест карти с видовете текстове за малкия бизнес и кратко пояснение към всеки.</desc>
+  <rect x="1" y="1" width="798" height="526" rx="16" fill="#ffffff" stroke="#dbe6e3" stroke-width="1.5"/>
+  <text x="32" y="50" font-size="22" font-weight="700" fill="#172933">Какви текстове пишат копирайтърите за малкия бизнес</text>
+  <text x="32" y="78" font-size="14" font-weight="400" fill="#4f5d63">Множество кратки текстове за всеки ден, в различни канали и в един и същ стил</text>
+  <rect x="32" y="100" width="234" height="176" rx="14" fill="#d5f6eb"/>
+  <circle cx="72" cy="140" r="22" fill="#ffffff"/>
+  <rect x="60" y="131" width="24" height="18" rx="3" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="60" y1="137" x2="84" y2="137" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="192" font-size="16" font-weight="700" fill="#172933">Текстове за сайта</text>
+  <text x="50" y="218" font-size="13" font-weight="400" fill="#4f5d63">начална страница, услуги,</text>
+  <text x="50" y="238" font-size="13" font-weight="400" fill="#4f5d63">„За нас“ и контакт</text>
+  <rect x="283" y="100" width="234" height="176" rx="14" fill="#d0ebfc"/>
+  <circle cx="323" cy="140" r="22" fill="#ffffff"/>
+  <path d="M312 129 L324 129 L335 140 L324 151 L312 139 Z" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="318" cy="135" r="2" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="301" y="192" font-size="16" font-weight="700" fill="#172933">Описания на продукти</text>
+  <text x="301" y="218" font-size="13" font-weight="400" fill="#4f5d63">за всеки продукт</text>
+  <text x="301" y="238" font-size="13" font-weight="400" fill="#4f5d63">в онлайн магазина</text>
+  <rect x="534" y="100" width="234" height="176" rx="14" fill="#d5f6eb"/>
+  <circle cx="574" cy="140" r="22" fill="#ffffff"/>
+  <rect x="565" y="128" width="18" height="24" rx="3" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="570" y1="136" x2="578" y2="136" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="570" y1="142" x2="578" y2="142" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="552" y="192" font-size="16" font-weight="700" fill="#172933">Статии за блога</text>
+  <text x="552" y="218" font-size="13" font-weight="400" fill="#4f5d63">отговори на въпросите</text>
+  <text x="552" y="238" font-size="13" font-weight="400" fill="#4f5d63">на клиентите</text>
+  <rect x="32" y="292" width="234" height="176" rx="14" fill="#d0ebfc"/>
+  <circle cx="72" cy="332" r="22" fill="#ffffff"/>
+  <path d="M61 328 L61 336 L68 336 L80 343 L80 321 L68 328 Z" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="384" font-size="16" font-weight="700" fill="#172933">Рекламни текстове</text>
+  <text x="50" y="410" font-size="13" font-weight="400" fill="#4f5d63">за реклами в Google,</text>
+  <text x="50" y="430" font-size="13" font-weight="400" fill="#4f5d63">Facebook и Instagram</text>
+  <rect x="283" y="292" width="234" height="176" rx="14" fill="#d5f6eb"/>
+  <circle cx="323" cy="332" r="22" fill="#ffffff"/>
+  <path d="M311 323 h24 v15 h-14 l-6 6 v-6 h-4 Z" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="301" y="384" font-size="16" font-weight="700" fill="#172933">Публикации</text>
+  <text x="301" y="405" font-size="16" font-weight="700" fill="#172933">в социалните мрежи</text>
+  <text x="301" y="431" font-size="13" font-weight="400" fill="#4f5d63">текст към снимка или</text>
+  <text x="301" y="451" font-size="13" font-weight="400" fill="#4f5d63">видео, по график</text>
+  <rect x="534" y="292" width="234" height="176" rx="14" fill="#d0ebfc"/>
+  <circle cx="574" cy="332" r="22" fill="#ffffff"/>
+  <rect x="562" y="324" width="24" height="16" rx="3" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M562 325 L574 334 L586 325" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="552" y="384" font-size="16" font-weight="700" fill="#172933">Имейли и бюлетини</text>
+  <text x="552" y="410" font-size="13" font-weight="400" fill="#4f5d63">нов продукт, сезонно</text>
+  <text x="552" y="430" font-size="13" font-weight="400" fill="#4f5d63">предложение, работно време</text>
+  <text x="32" y="504" font-size="14" font-weight="600" fill="#1f6a66">Различните видове текст изискват различни умения.</text>
+</svg>

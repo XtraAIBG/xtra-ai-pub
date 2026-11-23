@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 612" width="800" height="612" role="img" aria-labelledby="t d">
+  <title id="t">Таблица кои социални мрежи и профилът в Google са подходящи за девет вида малък бизнес, от ресторанти до B2B фирми</title>
+  <desc id="d">Матрица с видовете бизнес по редове и Facebook, Instagram, TikTok, LinkedIn, YouTube и профила в Google по колони; запълнен кръг означава подходяща мрежа, празен кръг означава подходяща, ако снимате видео.</desc>
+  <rect x="1" y="1" width="798" height="610" rx="16" fill="#ffffff" stroke="#c9eee4" stroke-width="1.5"/>
+  <text x="40" y="50" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="700" fill="#172933">Коя мрежа за какъв бизнес</text>
+  <text x="40" y="78" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#4f5d63">Практически ориентир по вид дейност, не се основава на статистика</text>
+  <text x="40" y="128" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#4f5d63">Вид бизнес</text>
+  <text x="316" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">Facebook</text>
+  <text x="404" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">Instagram</text>
+  <text x="488" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">TikTok</text>
+  <text x="566" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">LinkedIn</text>
+  <text x="644" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">YouTube</text>
+  <text x="730" y="110" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">Профил</text>
+  <text x="730" y="128" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#172933">в Google</text>
+  <line x1="24" y1="142" x2="776" y2="142" stroke="#2a8178" stroke-width="1.5"/>
+  <line x1="688" y1="96" x2="688" y2="506" stroke="#c9eee4" stroke-width="1.5"/>
+  <rect x="24" y="146" width="752" height="40" rx="8" fill="#d5f6eb" fill-opacity="0.5"/>
+  <text x="40" y="171" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Ресторанти и кафенета</text>
+  <circle cx="316" cy="166" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="166" r="8" fill="#2a8178"/>
+  <circle cx="730" cy="166" r="8" fill="#1f6a66"/>
+  <text x="40" y="211" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Хотели и къщи за гости</text>
+  <circle cx="316" cy="206" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="206" r="8" fill="#2a8178"/>
+  <circle cx="644" cy="206" r="7" fill="#ffffff" stroke="#2a8178" stroke-width="2.5"/>
+  <rect x="24" y="226" width="752" height="40" rx="8" fill="#d5f6eb" fill-opacity="0.5"/>
+  <text x="40" y="251" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Салони</text>
+  <circle cx="316" cy="246" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="246" r="8" fill="#2a8178"/>
+  <circle cx="488" cy="246" r="7" fill="#ffffff" stroke="#2a8178" stroke-width="2.5"/>
+  <text x="40" y="291" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Онлайн магазини</text>
+  <circle cx="316" cy="286" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="286" r="8" fill="#2a8178"/>
+  <circle cx="488" cy="286" r="8" fill="#2a8178"/>
+  <rect x="24" y="306" width="752" height="40" rx="8" fill="#d5f6eb" fill-opacity="0.5"/>
+  <text x="40" y="331" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Магазини и шоуруми</text>
+  <circle cx="316" cy="326" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="326" r="8" fill="#2a8178"/>
+  <circle cx="730" cy="326" r="8" fill="#1f6a66"/>
+  <text x="40" y="371" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Клиники и практики</text>
+  <circle cx="316" cy="366" r="8" fill="#2a8178"/>
+  <circle cx="644" cy="366" r="8" fill="#2a8178"/>
+  <circle cx="730" cy="366" r="8" fill="#1f6a66"/>
+  <rect x="24" y="386" width="752" height="40" rx="8" fill="#d5f6eb" fill-opacity="0.5"/>
+  <text x="40" y="411" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Автосервизи и майстори</text>
+  <circle cx="316" cy="406" r="8" fill="#2a8178"/>
+  <circle cx="730" cy="406" r="8" fill="#1f6a66"/>
+  <text x="40" y="451" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">Недвижими имоти</text>
+  <circle cx="316" cy="446" r="8" fill="#2a8178"/>
+  <circle cx="404" cy="446" r="8" fill="#2a8178"/>
+  <circle cx="644" cy="446" r="8" fill="#2a8178"/>
+  <rect x="24" y="466" width="752" height="40" rx="8" fill="#d5f6eb" fill-opacity="0.5"/>
+  <text x="40" y="491" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="15" fill="#172933">B2B фирми</text>
+  <circle cx="566" cy="486" r="8" fill="#2a8178"/>
+  <circle cx="644" cy="486" r="8" fill="#2a8178"/>
+  <circle cx="48" cy="537" r="8" fill="#2a8178"/>
+  <text x="64" y="542" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#172933">Подходяща мрежа</text>
+  <circle cx="232" cy="537" r="7" fill="#ffffff" stroke="#2a8178" stroke-width="2.5"/>
+  <text x="248" y="542" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#172933">Подходяща, ако снимате видео</text>
+  <text x="40" y="576" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#4f5d63">Проверете спрямо това, откъде реално идват запитванията Ви днес.</text>
+</svg>

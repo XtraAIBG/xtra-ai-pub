@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 376" width="760" height="376" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Месечна проверка на Google бизнес профила: работно време, меню, цени и услуги, снимки, оценки и коментари без отговор</title>
+  <desc id="d">Четири карти с това, което да проверявате в профила веднъж месечно.</desc>
+  <rect x="1" y="1" width="758" height="374" rx="16" fill="#ffffff" stroke="#dbe6e3" stroke-width="1.5"/>
+  <text x="32" y="50" font-size="22" font-weight="700" fill="#172933">Какво да проверявате в профила веднъж месечно</text>
+  <text x="32" y="78" font-size="14" font-weight="400" fill="#4f5d63">Профилът е полезен, докато информацията в него е вярна</text>
+  <rect x="32" y="100" width="340" height="116" rx="14" fill="#d5f6eb"/>
+  <circle cx="74" cy="158" r="24" fill="#ffffff"/>
+  <circle cx="74" cy="158" r="12" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M74 151 L74 158 L80 162" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="140" font-size="16" font-weight="700" fill="#172933">Работното време</text>
+  <text x="112" y="166" font-size="14" font-weight="400" fill="#4f5d63">особено преди празници</text>
+  <text x="112" y="186" font-size="14" font-weight="400" fill="#4f5d63">и при смяна на сезона</text>
+  <rect x="388" y="100" width="340" height="116" rx="14" fill="#d0ebfc"/>
+  <circle cx="430" cy="158" r="24" fill="#ffffff"/>
+  <circle cx="422" cy="152" r="1.5" fill="#256f9e"/><line x1="427" y1="152" x2="440" y2="152" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="422" cy="158" r="1.5" fill="#256f9e"/><line x1="427" y1="158" x2="440" y2="158" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="422" cy="164" r="1.5" fill="#256f9e"/><line x1="427" y1="164" x2="440" y2="164" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="468" y="140" font-size="16" font-weight="700" fill="#172933">Менюто, цените и услугите</text>
+  <text x="468" y="166" font-size="14" font-weight="400" fill="#4f5d63">да съвпадат със сайта</text>
+  <text x="468" y="186" font-size="14" font-weight="400" fill="#4f5d63">и социалните мрежи</text>
+  <rect x="32" y="228" width="340" height="116" rx="14" fill="#d0ebfc"/>
+  <circle cx="74" cy="286" r="24" fill="#ffffff"/>
+  <rect x="62" y="278" width="24" height="17" rx="3" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="74" cy="286" r="4.5" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="69" y1="275" x2="76" y2="275" fill="none" stroke="#256f9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="268" font-size="16" font-weight="700" fill="#172933">Снимките</text>
+  <text x="112" y="294" font-size="14" font-weight="400" fill="#4f5d63">нови, когато обновите обекта,</text>
+  <text x="112" y="314" font-size="14" font-weight="400" fill="#4f5d63">продуктите или услугите</text>
+  <rect x="388" y="228" width="340" height="116" rx="14" fill="#d5f6eb"/>
+  <circle cx="430" cy="286" r="24" fill="#ffffff"/>
+  <path d="M418 277 h24 v15 h-14 l-6 6 v-6 h-4 Z" fill="none" stroke="#2a8178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="468" y="268" font-size="16" font-weight="700" fill="#172933">Оценките и коментарите</text>
+  <text x="468" y="294" font-size="14" font-weight="400" fill="#4f5d63">на които още не сте</text>
+  <text x="468" y="314" font-size="14" font-weight="400" fill="#4f5d63">отговорили</text>
+</svg>
