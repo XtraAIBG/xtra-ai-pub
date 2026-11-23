@@ -26,6 +26,8 @@
         close: "Close chat",
         reset: "New conversation",
         teaser: "Hi! 👋 Can I help?",
+        prev: "Previous",
+        next: "Next",
         tilesLead: "Here you can learn more about this topic:",
         service: "Service",
         privacy: "Messages are answered by AI. Please don't share personal or sensitive data.",
@@ -49,6 +51,8 @@
         close: "Затвори чата",
         reset: "Нов разговор",
         teaser: "Здравейте! 👋 Мога ли да помогна?",
+        prev: "Предишна",
+        next: "Следваща",
         tilesLead: "Тук ще разберете повече по темата:",
         service: "Услуга",
         privacy: "Отговорите са от AI. Моля, не споделяйте лични или чувствителни данни.",
@@ -138,6 +142,22 @@
       .tile b { font-size: 13px; line-height: 1.3; font-weight: 700; }
       .tile em { font-style: normal; font-size: 12px; line-height: 1.35; color: #4f5d63;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+      /* Two or more tiles: a row of vertical cards, scrolled sideways (swipe, trackpad or arrows). */
+      .carousel { max-width: 100%; }
+      .carousel .cwrap { position: relative; }
+      .carousel .track { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+        scrollbar-width: none; padding: 2px 2px 4px; overscroll-behavior-x: contain; }
+      .carousel .track::-webkit-scrollbar { display: none; }
+      .carousel .tile { flex: 0 0 210px; flex-direction: column; align-items: stretch; gap: 8px; scroll-snap-align: start; }
+      .carousel .tile img { width: 100%; }
+      .carousel .tile em { -webkit-line-clamp: 3; }
+      .cnav { position: absolute; top: 38px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #d6e6ee;
+        background: #fff; color: #1f6a66; font-size: 18px; line-height: 1; cursor: pointer; display: grid; place-items: center;
+        box-shadow: 0 6px 14px -8px rgba(23,41,51,.45); }
+      .cnav:hover { background: #d5f6eb; }
+      .cnav.prev { left: -6px; }
+      .cnav.next { right: -6px; }
+      .cnav[hidden] { display: none; }
       .tiles-lead { margin: 2px 0 0 2px; font-size: 12px; font-weight: 700; color: #1f6a66; }
       .bot { max-width: 90%; background: #fff; border: 1px solid #d6e6ee; align-self: flex-start; padding: 10px 13px; }
       .user { background: #2a8178; color: #fff; align-self: flex-end; white-space: pre-wrap; }
@@ -458,7 +478,18 @@
     lead.className = "tiles-lead";
     lead.textContent = T.tilesLead;
     box.appendChild(lead);
-    for (const art of found.slice(0, 3)) {
+    const many = found.length > 1;
+    let holder = box;
+    if (many) {
+      box.classList.add("carousel");
+      const cwrap = document.createElement("div");
+      cwrap.className = "cwrap";
+      holder = document.createElement("div");
+      holder.className = "track";
+      cwrap.appendChild(holder);
+      box.appendChild(cwrap);
+    }
+    for (const art of found.slice(0, 6)) {
       const t = document.createElement("a");
       t.className = "tile";
       t.href = new URL(art.path.replace(/^\//, ""), BASE).href;
@@ -486,7 +517,28 @@
         txt.appendChild(d);
       }
       t.appendChild(txt);
-      box.appendChild(t);
+      holder.appendChild(t);
+    }
+    if (many) {
+      const cwrap = holder.parentNode;
+      const mk = (cls, label, glyph, dir) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "cnav " + cls;
+        b.setAttribute("aria-label", label);
+        b.textContent = glyph;
+        b.addEventListener("click", () => holder.scrollBy({ left: dir * (holder.clientWidth * 0.8), behavior: "smooth" }));
+        cwrap.appendChild(b);
+        return b;
+      };
+      const prev = mk("prev", T.prev, "‹", -1);
+      const next = mk("next", T.next, "›", 1);
+      const sync = () => {
+        prev.hidden = holder.scrollLeft <= 2;
+        next.hidden = holder.scrollLeft + holder.clientWidth >= holder.scrollWidth - 2;
+      };
+      holder.addEventListener("scroll", sync, { passive: true });
+      requestAnimationFrame(sync);
     }
     el.after(box);
     msgsEl.scrollTop = msgsEl.scrollHeight;
