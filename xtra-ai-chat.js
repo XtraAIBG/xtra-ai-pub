@@ -19,7 +19,7 @@
   const T = isEN
     ? {
         title: "Alex · AI assistant",
-        greet: "Hello! I'm Alex, the AI assistant of Xtra AI. How can I help you today?",
+        greet: "Hello! 👋\n\nI'm **Alex**, the AI assistant of Xtra AI.\n\nIt would be my pleasure to talk with you about growth opportunities for your business!",
         placeholder: "Type your question...",
         send: "Send",
         open: "Open chat",
@@ -30,7 +30,7 @@
       }
     : {
         title: "Алекс · AI асистент",
-        greet: "Здравейте! Аз съм Алекс, AI асистентът на Xtra AI. С какво мога да Ви помогна?",
+        greet: "Здравейте! 👋\n\nАз съм **Алекс**, AI асистентът на Xtra AI.\n\nЗа мен ще бъде удоволствие да разговаряме за възможности за развитие на Вашия бизнес!",
         placeholder: "Напишете въпрос...",
         send: "Изпрати",
         open: "Отвори чата",
@@ -87,7 +87,7 @@
       .bot { max-width: 90%; background: #fff; border: 1px solid #d6e6ee; align-self: flex-start; padding: 10px 13px; }
       .user { background: #2a8178; color: #fff; align-self: flex-end; white-space: pre-wrap; }
       .bot p, .bot ul, .bot ol { margin: 0; }
-      .bot > * + * { margin-top: 8px; }
+      .bot > :not(:first-child) { margin-top: 10px; } /* beats ".bot p { margin: 0 }" (0,2,0 > 0,1,1) */
       .bot ul, .bot ol { padding-left: 20px; }
       .bot li + li { margin-top: 4px; }
       .bot li::marker { color: #2a8178; font-weight: 700; }
