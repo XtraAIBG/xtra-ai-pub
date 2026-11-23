@@ -5,6 +5,6 @@
 :HL["../_next/static/media/82450a180bcad83c-s.p.0p-wng2nn8o-p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["../_next/static/media/fedb2de3d7241a62-s.p.0g2162x3jbg9n.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 3:[["children",{"s":"__PAGE__","h":160}]]
-2:[["children",{"s":{"n":"slug","t":"d","k":"socialni-mrezhi","s":["en","saveti"]},"h":65632,"c":"$Q3"}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"socialni-mrezhi","s":["en","saveti","xtra-ai-chat-context.json"]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"(bg)","h":131184,"c":"$Q2"}]]
-0:{"b":"FzkSuUvZqmML3k3Kto9P7","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"Gt547J71fKpQmi6L879mB","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

@@ -1,4 +1,3 @@
 User-Agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://xtra-ai.com/sitemap.xml
