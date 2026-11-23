@@ -27,6 +27,9 @@
         reset: "New conversation",
         teaser: "Hi! 👋 Can I help?",
         prev: "Previous",
+        hubLink: "All tips",
+        homeLink: "Xtra AI home page",
+        ownLink: "Open the page",
         next: "Next",
         tilesLead: "Here you can learn more about this topic:",
         service: "Service",
@@ -34,7 +37,7 @@
         limit: "We've reached the message limit for this conversation. The quickest next step is a free call with us:",
         // [button label, message sent]; a plain string sends its own label.
         chips: ["I want more customers", "I lose time on routine tasks", "How much does it cost?",
-          ["Helpful tips for my business", "What helpful tips do you have for a small business like mine?"]],
+          ["Helpful tips for my business", "What helpful tips do you have for a business like mine?"]],
         chipPage: (t) => "I have a question about “" + t + "”",
         chipPageLabel: "A question about this page",
         teaserClose: "Hide",
@@ -52,6 +55,9 @@
         reset: "Нов разговор",
         teaser: "Здравейте! 👋 Мога ли да помогна?",
         prev: "Предишна",
+        hubLink: "Всички съвети",
+        homeLink: "Началната страница на Xtra AI",
+        ownLink: "Отворете страницата",
         next: "Следваща",
         tilesLead: "Тук ще разберете повече по темата:",
         service: "Услуга",
@@ -59,7 +65,7 @@
         limit: "Достигнахме лимита на съобщения за този разговор. Най-бързата следваща стъпка е безплатен разговор с нас:",
         // [надпис на бутона, изпратен текст]; обикновен текст изпраща самия надпис.
         chips: ["Искам повече клиенти", "Губя време в рутинни задачи", "Колко струва?",
-          ["Полезни съвети за бизнеса", "Какви полезни съвети имате за малък бизнес като моя?"]],
+          ["Полезни съвети за бизнеса", "Какви полезни съвети имате за бизнес като моя?"]],
         chipPage: (t) => "Имам въпрос за „" + t + "“",
         chipPageLabel: "Въпрос за тази страница",
         teaserClose: "Скрий",
@@ -142,22 +148,27 @@
       .tile b { font-size: 13px; line-height: 1.3; font-weight: 700; }
       .tile em { font-style: normal; font-size: 12px; line-height: 1.35; color: #4f5d63;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-      /* Two or more tiles: a row of vertical cards, scrolled sideways (swipe, trackpad or arrows). */
+      /* Two or more tiles: a row of vertical cards scrolled sideways (swipe, trackpad or the arrows in the
+         heading row). The next card peeks in and the edges fade, so it is clear there is more. */
       .carousel { max-width: 100%; }
-      .carousel .cwrap { position: relative; }
-      .carousel .track { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
-        scrollbar-width: none; padding: 2px 2px 4px; overscroll-behavior-x: contain; }
+      .tiles-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+      .cnavs { display: flex; gap: 6px; flex: none; }
+      .cnav { width: 28px; height: 28px; border-radius: 50%; border: 1px solid #c7dbe3; background: #fff; color: #1f6a66;
+        font-size: 17px; line-height: 1; cursor: pointer; display: grid; place-items: center; padding: 0 0 2px; }
+      .cnav:hover:not(:disabled) { background: #d5f6eb; border-color: #2a8178; }
+      .cnav:disabled { opacity: .35; cursor: default; }
+      .carousel .track { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+        scrollbar-width: none; padding: 2px 2px 6px; overscroll-behavior-x: contain; scroll-padding: 0 2px; }
       .carousel .track::-webkit-scrollbar { display: none; }
-      .carousel .tile { flex: 0 0 210px; flex-direction: column; align-items: stretch; gap: 8px; scroll-snap-align: start; }
-      .carousel .tile img { width: 100%; }
-      .carousel .tile em { -webkit-line-clamp: 3; }
-      .cnav { position: absolute; top: 38px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #d6e6ee;
-        background: #fff; color: #1f6a66; font-size: 18px; line-height: 1; cursor: pointer; display: grid; place-items: center;
-        box-shadow: 0 6px 14px -8px rgba(23,41,51,.45); }
-      .cnav:hover { background: #d5f6eb; }
-      .cnav.prev { left: -6px; }
-      .cnav.next { right: -6px; }
-      .cnav[hidden] { display: none; }
+      .carousel .track.more-r { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+      .carousel .track.more-l { -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%); mask-image: linear-gradient(90deg, transparent, #000 15%); }
+      .carousel .track.more-l.more-r { -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+      .carousel .tile { flex: 0 0 min(78%, 230px); flex-direction: column; align-items: stretch; gap: 0; padding: 0;
+        overflow: hidden; scroll-snap-align: start; border-radius: 14px; }
+      .carousel .tile img { width: 100%; border-radius: 0; border-bottom: 1px solid #e3eef3; }
+      .carousel .tile span { padding: 9px 11px 11px; gap: 3px; }
+      .carousel .tile b { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+      .carousel .tile em { -webkit-line-clamp: 2; }
       .tiles-lead { margin: 2px 0 0 2px; font-size: 12px; font-weight: 700; color: #1f6a66; }
       .bot { max-width: 90%; background: #fff; border: 1px solid #d6e6ee; align-self: flex-start; padding: 10px 13px; }
       .user { background: #2a8178; color: #fff; align-self: flex-end; white-space: pre-wrap; }
@@ -169,7 +180,7 @@
       .bot strong { font-weight: 700; color: #172933; }
       .bot .h { font-weight: 700; }
       .bot a { color: #1f6a66; }
-      .bot a.cta { display: inline-block; margin-top: 2px; background: #2a8178; color: #fff; text-decoration: none;
+      .bot a.cta { display: table; margin: 8px 0 6px; background: #2a8178; color: #fff; text-decoration: none;
         font-weight: 600; font-size: 13px; padding: 7px 14px; border-radius: 999px; }
       .bot a.cta:hover { background: #1f6a66; }
       .typing::after { content: "…"; animation: b 1s infinite; }
@@ -363,8 +374,12 @@
       for (const tok of parseInline(line)) {
         if (tok.t === "text") {
           // spaceAfterUrls() split "https://x.bg/." into URL + " ."; glue the punctuation back on.
-          const prevLink = parent.lastChild && parent.lastChild.nodeName === "A";
-          const v = prevLink ? tok.v.replace(/^\s+(?=[.,;:!?»')])/, "") : tok.v;
+          const last = parent.lastChild;
+          const prevLink = last && last.nodeName === "A";
+          // After the booking button (its own line) drop the sentence punctuation that followed the link.
+          const v = prevLink && last.classList.contains("cta")
+            ? tok.v.replace(/^\s*[.,;:]?\s*/, "")
+            : prevLink ? tok.v.replace(/^\s+(?=[.,;:!?»')])/, "") : tok.v;
           parent.appendChild(document.createTextNode(v));
         } else if (tok.t === "b") {
           const s = document.createElement("strong");
@@ -383,6 +398,8 @@
           if (own) {
             // Our own pages open in the same tab (on this copy of the site); the chat reopens there.
             a.href = own;
+            // A bare link shows the page's name instead of "xtra-ai.com/…".
+            if (!tok.label && !a.classList.contains("cta")) a.textContent = ownLabel(own);
           } else if (!tok.href.startsWith("mailto:")) {
             a.target = "_blank";
             a.rel = "noopener";
@@ -460,6 +477,16 @@
     return new URL(u.pathname.replace(/^\//, "") + u.search + u.hash, BASE).href;
   }
 
+  function ownLabel(href) {
+    let path;
+    try { path = norm(sitePath(new URL(href).pathname)); } catch { return T.ownLink; }
+    const hit = (articles || []).find((x) => norm(x.path) === path);
+    if (hit) return hit.title;
+    if (path === "/saveti/" || path === "/en/saveti/") return T.hubLink;
+    if (path === "/" || path === "/en/") return T.homeLink;
+    return T.ownLink;
+  }
+
   function addTiles(el) {
     if (!articles || !articles.length) return;
     const seen = new Set();
@@ -474,20 +501,20 @@
     if (!found.length) return;
     const box = document.createElement("div");
     box.className = "tiles";
+    const head = document.createElement("div");
+    head.className = "tiles-head";
     const lead = document.createElement("p");
     lead.className = "tiles-lead";
     lead.textContent = T.tilesLead;
-    box.appendChild(lead);
+    head.appendChild(lead);
+    box.appendChild(head);
     const many = found.length > 1;
     let holder = box;
     if (many) {
       box.classList.add("carousel");
-      const cwrap = document.createElement("div");
-      cwrap.className = "cwrap";
       holder = document.createElement("div");
       holder.className = "track";
-      cwrap.appendChild(holder);
-      box.appendChild(cwrap);
+      box.appendChild(holder);
     }
     for (const art of found.slice(0, 6)) {
       const t = document.createElement("a");
@@ -520,22 +547,29 @@
       holder.appendChild(t);
     }
     if (many) {
-      const cwrap = holder.parentNode;
-      const mk = (cls, label, glyph, dir) => {
+      const navs = document.createElement("div");
+      navs.className = "cnavs";
+      head.appendChild(navs);
+      const step = () => (holder.firstElementChild ? holder.firstElementChild.offsetWidth + 10 : holder.clientWidth * 0.8);
+      const mk = (label, glyph, dir) => {
         const b = document.createElement("button");
         b.type = "button";
-        b.className = "cnav " + cls;
+        b.className = "cnav";
         b.setAttribute("aria-label", label);
         b.textContent = glyph;
-        b.addEventListener("click", () => holder.scrollBy({ left: dir * (holder.clientWidth * 0.8), behavior: "smooth" }));
-        cwrap.appendChild(b);
+        b.addEventListener("click", () => holder.scrollBy({ left: dir * step(), behavior: "smooth" }));
+        navs.appendChild(b);
         return b;
       };
-      const prev = mk("prev", T.prev, "‹", -1);
-      const next = mk("next", T.next, "›", 1);
+      const prev = mk(T.prev, "‹", -1);
+      const next = mk(T.next, "›", 1);
       const sync = () => {
-        prev.hidden = holder.scrollLeft <= 2;
-        next.hidden = holder.scrollLeft + holder.clientWidth >= holder.scrollWidth - 2;
+        const atStart = holder.scrollLeft <= 2;
+        const atEnd = holder.scrollLeft + holder.clientWidth >= holder.scrollWidth - 2;
+        prev.disabled = atStart;
+        next.disabled = atEnd;
+        holder.classList.toggle("more-l", !atStart);
+        holder.classList.toggle("more-r", !atEnd);
       };
       holder.addEventListener("scroll", sync, { passive: true });
       requestAnimationFrame(sync);
@@ -595,7 +629,13 @@
   addMsg("bot", T.greet);
   const restored = history.map((m) => addMsg(m.role === "user" ? "user" : "bot", m.content));
   addChips();
-  articlesReady.then(() => restored.forEach((el) => el.classList.contains("bot") && addTiles(el)));
+  articlesReady.then(() =>
+    restored.forEach((el, i) => {
+      if (!el.classList.contains("bot")) return;
+      render(el, history[i].content); // page names for bare links now that the list is loaded
+      addTiles(el);
+    }),
+  );
 
   // ---- Open / close ----
   // Open state survives page changes in this tab: after following a link from the chat, the next page
