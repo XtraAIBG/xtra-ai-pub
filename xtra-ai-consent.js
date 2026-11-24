@@ -14,14 +14,14 @@
   const T = isEN
     ? {
         label: "Cookie consent",
-        text: "We use Google Analytics cookies to understand how the website is used. We turn them on only if you agree.",
+        text: "This website uses cookies.",
         privacy: "Privacy policy",
         accept: "Accept",
         decline: "Decline",
       }
     : {
         label: "Съгласие за бисквитки",
-        text: "Използваме бисквитки на Google Analytics, за да разберем как се използва сайтът. Включваме ги само ако се съгласите.",
+        text: "Този сайт използва бисквитки.",
         privacy: "Политика за поверителност",
         accept: "Приемам",
         decline: "Отказвам",
