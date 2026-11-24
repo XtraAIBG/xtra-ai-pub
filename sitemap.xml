@@ -104,4 +104,18 @@
 <loc>https://xtra-ai.example/saveti/socialni-mrezhi-za-biznes/</loc>
 <lastmod>2026-11-22</lastmod>
 </url>
+<url>
+<loc>https://xtra-ai.example/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="bg" href="https://xtra-ai.example/privacy/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://xtra-ai.example/en/privacy/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://xtra-ai.example/privacy/" />
+<lastmod>2026-11-24</lastmod>
+</url>
+<url>
+<loc>https://xtra-ai.example/en/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="bg" href="https://xtra-ai.example/privacy/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://xtra-ai.example/en/privacy/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://xtra-ai.example/privacy/" />
+<lastmod>2026-11-24</lastmod>
+</url>
 </urlset>
