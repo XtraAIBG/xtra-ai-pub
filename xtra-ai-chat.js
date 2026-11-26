@@ -240,7 +240,7 @@
         <div class="head">
           <span class="who"><img class="ava" alt="" width="36" height="36" decoding="async"><span class="nm"><strong></strong><small></small></span></span>
           <a target="_blank" rel="noopener"></a>
-          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button>
+          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></button>
           <button class="size" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="grow" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/><path class="shrink" d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg></button>
           <button class="x" type="button">×</button>
         </div>
