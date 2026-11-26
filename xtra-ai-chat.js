@@ -25,8 +25,6 @@
         open: "Open chat",
         close: "Close chat",
         reset: "New conversation",
-        bigger: "Enlarge chat",
-        smaller: "Shrink chat",
         teaser: "Hi! 👋 Can I help?",
         prev: "Previous",
         hubLink: "All tips",
@@ -55,8 +53,6 @@
         open: "Отвори чата",
         close: "Затвори чата",
         reset: "Нов разговор",
-        bigger: "Уголемете чата",
-        smaller: "Намалете чата",
         teaser: "Здравейте! 👋 Мога ли да помогна?",
         prev: "Предишна",
         hubLink: "Всички съвети",
@@ -109,7 +105,7 @@
       .fab:hover { background: #1f6a66; }
       .fab svg { width: 26px; height: 26px; }
       .fab:focus-visible, button:focus-visible, textarea:focus-visible, a:focus-visible { outline: 2px solid #256f9e; outline-offset: 3px; }
-      .panel { display: none; flex-direction: column; width: min(410px, calc(100vw - 32px));
+      .panel { display: none; flex-direction: column; width: min(380px, calc(100vw - 32px));
         height: min(560px, calc(100dvh - 100px)); background: #fff; color: #172933;
         border-radius: 20px; box-shadow: 0 30px 70px -30px rgba(23,41,51,.45), 0 8px 24px rgba(23,41,51,.12);
         overflow: hidden; margin-bottom: 68px; }
@@ -138,11 +134,7 @@
       .head { background: #1f6a66; color: #fff; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
       .head strong { font-size: 15px; font-weight: 700; }
       .nm { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
-      .nm small { font-size: 12px; opacity: .85; font-weight: 500; white-space: nowrap; }
-      .head { gap: 6px; padding-left: 12px; padding-right: 10px; }
-      .who { flex: none; }
-      .head a:not(.cta) { padding: 5px 9px; font-size: 11.5px; margin-left: auto; }
-      .head { justify-content: flex-start; }
+      .nm small { font-size: 12px; opacity: .85; font-weight: 500; }
       .who { display: flex; align-items: center; gap: 10px; min-width: 0; }
       .ava { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex: none;
         border: 2px solid #d5f6eb; background: #d5f6eb; }
@@ -152,15 +144,6 @@
       .new:hover { background: rgba(255,255,255,.15); }
       .new:disabled { opacity: .5; cursor: default; }
       .new svg { width: 18px; height: 18px; }
-      .size { background: transparent; border: 0; color: #fff; cursor: pointer; padding: 4px; border-radius: 8px; display: grid; place-items: center; }
-      .size:hover { background: rgba(255,255,255,.15); }
-      .size svg { width: 17px; height: 17px; }
-      .size .shrink, .big .size .grow { display: none; }
-      .big .size .shrink { display: inline; }
-      /* Enlarged chat (desktop): wide and tall, still anchored bottom-right. */
-      .big .panel { width: min(760px, calc(100vw - 48px)); height: min(860px, calc(100dvh - 100px)); }
-      .big .m { max-width: 78%; }
-      .big .tiles, .big .chips { max-width: 85%; }
       .x { background: transparent; border: 0; color: #fff; font-size: 22px; line-height: 1; cursor: pointer; padding: 2px 4px; }
       .msgs { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 12px; display: flex; flex-direction: column; gap: 8px; background: #eef7fc; }
       .m { max-width: 85%; padding: 9px 12px; border-radius: 14px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
@@ -225,7 +208,6 @@
       @media (max-width: 640px) {
         .open .panel { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-height: none; margin: 0; border-radius: 0; }
         .open .fab, .open .teaser { display: none; }
-        .size { display: none; }
         textarea { font-size: 16px; height: 44px; }
         .send { min-height: 44px; }
         .m, .chips, .tiles { max-width: 100%; }
@@ -240,8 +222,7 @@
         <div class="head">
           <span class="who"><img class="ava" alt="" width="36" height="36" decoding="async"><span class="nm"><strong></strong><small></small></span></span>
           <a target="_blank" rel="noopener"></a>
-          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></button>
-          <button class="size" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="grow" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/><path class="shrink" d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg></button>
+          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button>
           <button class="x" type="button">×</button>
         </div>
         <div class="msgs" aria-live="polite"></div>
@@ -301,20 +282,6 @@
     bookLink.remove();
   }
   $(".x").setAttribute("aria-label", T.close);
-  // Enlarge / shrink (desktop). Remembered for the visit, so the next page opens the same size.
-  const SIZE_KEY = "xtra-ai-chat-big";
-  const sizeBtn = $(".size");
-  const setBig = (v) => {
-    wrap.classList.toggle("big", v);
-    sizeBtn.setAttribute("aria-label", v ? T.smaller : T.bigger);
-    sizeBtn.title = v ? T.smaller : T.bigger;
-    try { v ? sessionStorage.setItem(SIZE_KEY, "1") : sessionStorage.removeItem(SIZE_KEY); } catch {}
-    msgsEl.scrollTop = msgsEl.scrollHeight;
-  };
-  let wasBig = false;
-  try { wasBig = sessionStorage.getItem(SIZE_KEY) === "1"; } catch {}
-  setBig(wasBig);
-  sizeBtn.addEventListener("click", () => setBig(!wrap.classList.contains("big")));
   const newBtn = $(".new");
   newBtn.setAttribute("aria-label", T.reset);
   newBtn.title = T.reset;
@@ -857,16 +824,6 @@
       input.focus();
     }
   }
-
-  // Page hook: the home page's "Tell us about your business" box calls XtraAIChat.ask(text), which opens
-  // the chat and sends the text as the visitor's message (src/components/AskBox.tsx).
-  window.XtraAIChat = {
-    ask(text) {
-      const t = String(text || "").trim().slice(0, 1000);
-      setOpen(true, { focus: false });
-      if (t && !busy) send(t);
-    },
-  };
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();

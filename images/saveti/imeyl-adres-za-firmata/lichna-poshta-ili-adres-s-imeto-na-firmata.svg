@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 452" width="800" height="452" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Сравнение между лична поща в общодостъпна услуга и адрес с името на фирмата: с какъв домейн завършват, какво изискват и на кого остават</title>
+  <desc id="d">Две колони: личната поща завършва с домейна на услугата, създава се бързо, свързана е с личния профил на един човек и клиентът не вижда името на бизнеса; адресът с името на фирмата завършва с домейна на бизнеса, изисква домейн и пощенска услуга, показва името на бизнеса и остава на фирмата.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="450" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Лична поща или адрес с името на фирмата</text>
+
+  <!-- left column -->
+  <rect x="24" y="76" width="368" height="352" rx="14" fill="#d0ebfc"/>
+  <text x="208" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#172933">Лична поща</text>
+  <text x="208" y="134" text-anchor="middle" font-size="14" fill="#4f5d63">например в Gmail</text>
+
+  <circle cx="54" cy="176" r="6" fill="#256f9e"/>
+  <text x="72" y="181" font-size="15" fill="#172933">Завършва с домейна на услугата</text>
+  <circle cx="54" cy="236" r="6" fill="#256f9e"/>
+  <text x="72" y="241" font-size="15" fill="#172933">Създава се бързо</text>
+  <circle cx="54" cy="306" r="6" fill="#256f9e"/>
+  <text x="72" y="311" font-size="15" fill="#172933">Свързана е с личния профил</text>
+  <text x="72" y="332" font-size="15" fill="#172933">на един човек</text>
+  <circle cx="54" cy="376" r="6" fill="#256f9e"/>
+  <text x="72" y="381" font-size="15" fill="#172933">Клиентът не вижда в него</text>
+  <text x="72" y="402" font-size="15" fill="#172933">името на бизнеса</text>
+
+  <!-- right column -->
+  <rect x="408" y="76" width="368" height="352" rx="14" fill="#d5f6eb" stroke="#2a8178" stroke-width="1.5"/>
+  <text x="592" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#172933">Адрес с името на фирмата</text>
+  <text x="592" y="134" text-anchor="middle" font-size="14" fill="#4f5d63">на домейна на фирмата</text>
+
+  <circle cx="438" cy="176" r="6" fill="#2a8178"/>
+  <text x="456" y="181" font-size="15" fill="#172933">Завършва с домейна на бизнеса</text>
+  <circle cx="438" cy="236" r="6" fill="#2a8178"/>
+  <text x="456" y="241" font-size="15" fill="#172933">Изисква регистриран домейн</text>
+  <text x="456" y="262" font-size="15" fill="#172933">и пощенска услуга</text>
+  <circle cx="438" cy="306" r="6" fill="#2a8178"/>
+  <text x="456" y="311" font-size="15" fill="#172933">Показва името на бизнеса</text>
+  <text x="456" y="332" font-size="15" fill="#172933">във всяко писмо</text>
+  <circle cx="438" cy="376" r="6" fill="#2a8178"/>
+  <text x="456" y="381" font-size="15" fill="#172933">Остава на фирмата и когато</text>
+  <text x="456" y="402" font-size="15" fill="#172933">служител напусне</text>
+</svg>

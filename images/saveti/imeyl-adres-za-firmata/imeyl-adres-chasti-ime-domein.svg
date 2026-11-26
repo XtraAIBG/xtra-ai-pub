@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Трите части на имейл адреса в измисления пример office@vashata-firma.bg: име преди знака @, знакът @ и домейн след него</title>
+  <desc id="d">Измисленият адрес office@vashata-firma.bg е разделен на три цветни части с обяснение под всяка: office е името на пощенската кутия, следва знакът @, а vashata-firma.bg е домейнът на фирмата.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="378" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">От какви части се състои имейл адресът</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Всеки адрес има три части</text>
+
+  <!-- part 1: name -->
+  <rect x="24" y="104" width="276" height="84" rx="14" fill="#d5f6eb" stroke="#2a8178" stroke-width="1.5"/>
+  <text x="162" y="157" text-anchor="middle" font-size="30" font-weight="700" fill="#1f6a66">office</text>
+
+  <!-- part 2: @ -->
+  <rect x="316" y="104" width="120" height="84" rx="14" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <text x="376" y="157" text-anchor="middle" font-size="30" font-weight="700" fill="#172933">@</text>
+
+  <!-- part 3: domain -->
+  <rect x="452" y="104" width="324" height="84" rx="14" fill="#d0ebfc" stroke="#256f9e" stroke-width="1.5"/>
+  <text x="614" y="157" text-anchor="middle" font-size="30" font-weight="700" fill="#256f9e">vashata-firma.bg</text>
+
+  <!-- connectors -->
+  <line x1="162" y1="188" x2="162" y2="206" stroke="#2a8178" stroke-width="2"/>
+  <line x1="376" y1="188" x2="376" y2="206" stroke="#2a8178" stroke-width="2"/>
+  <line x1="614" y1="188" x2="614" y2="206" stroke="#256f9e" stroke-width="2"/>
+
+  <!-- labels -->
+  <text x="162" y="230" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Име преди знака @</text>
+  <text x="162" y="253" text-anchor="middle" font-size="14" fill="#4f5d63">името на пощенската кутия</text>
+  <text x="376" y="230" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Знакът @</text>
+  <text x="614" y="230" text-anchor="middle" font-size="16" font-weight="700" fill="#172933">Домейн след знака @</text>
+  <text x="614" y="253" text-anchor="middle" font-size="14" fill="#4f5d63">домейнът на фирмата</text>
+
+  <!-- note -->
+  <rect x="24" y="284" width="752" height="72" rx="12" fill="#d5f6eb"/>
+  <text x="400" y="313" text-anchor="middle" font-size="15" font-weight="600" fill="#172933">Измислен пример. Името преди @ избирате Вие,</text>
+  <text x="400" y="336" text-anchor="middle" font-size="15" fill="#4f5d63">а домейнът показва към коя фирма или услуга принадлежи адресът.</text>
+</svg>
