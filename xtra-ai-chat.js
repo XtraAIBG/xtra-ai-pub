@@ -825,6 +825,16 @@
     }
   }
 
+  // Page hook: the home page's "Tell us about your business" box calls XtraAIChat.ask(text), which opens
+  // the chat and sends the text as the visitor's message (src/components/AskBox.tsx).
+  window.XtraAIChat = {
+    ask(text) {
+      const t = String(text || "").trim().slice(0, 1000);
+      setOpen(true, { focus: false });
+      if (t && !busy) send(t);
+    },
+  };
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const text = input.value.trim();

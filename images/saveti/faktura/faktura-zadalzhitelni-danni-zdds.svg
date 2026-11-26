@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 784" width="800" height="784" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Празен образец на фактура с имената на задължителните данни по чл. 114, ал. 1 от ЗДДС: наименование, номер, дати, доставчик, получател, стока или услуга, цени, данъчна основа, данък и сума за плащане</title>
+  <desc id="d">Схема на фактура без реални данни: горе са наименованието на документа, поредният десетразряден номер и датите, под тях доставчикът и получателят, след това редовете за стоката или услугата и накрая данъчната основа, намаленията, ставката, размерът на данъка и сумата за плащане.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="782" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Какво съдържа фактурата</text>
+  <text x="400" y="78" text-anchor="middle" font-size="15" fill="#4f5d63">Задължителните данни по чл. 114, ал. 1 от ЗДДС</text>
+
+  <!-- invoice sheet -->
+  <rect x="32" y="100" width="736" height="598" rx="14" fill="#ffffff" stroke="#2a8178" stroke-width="1.5"/>
+
+  <!-- document name -->
+  <text x="60" y="152" font-size="26" font-weight="700" fill="#1f6a66">Фактура</text>
+  <text x="60" y="180" font-size="14" fill="#4f5d63">наименование на документа</text>
+
+  <!-- number and dates -->
+  <rect x="400" y="116" width="344" height="120" rx="12" fill="#d5f6eb"/>
+  <text x="416" y="144" font-size="14" font-weight="600" fill="#172933">№ пореден десетразряден номер</text>
+  <text x="416" y="170" font-size="14" fill="#172933">Дата на издаване</text>
+  <text x="416" y="196" font-size="14" fill="#172933">Дата на данъчното събитие</text>
+  <text x="416" y="216" font-size="14" fill="#172933">или на получаване на плащането</text>
+
+  <!-- supplier and recipient -->
+  <rect x="56" y="254" width="336" height="100" rx="12" fill="#d0ebfc"/>
+  <text x="72" y="284" font-size="16" font-weight="700" fill="#172933">Доставчик</text>
+  <text x="72" y="310" font-size="14" fill="#4f5d63">Име и адрес</text>
+  <text x="72" y="334" font-size="14" fill="#4f5d63">Идентификационен номер</text>
+
+  <rect x="408" y="254" width="336" height="100" rx="12" fill="#d0ebfc"/>
+  <text x="424" y="284" font-size="16" font-weight="700" fill="#172933">Получател</text>
+  <text x="424" y="310" font-size="14" fill="#4f5d63">Име и адрес</text>
+  <text x="424" y="334" font-size="14" fill="#4f5d63">Идентификационен номер</text>
+
+  <!-- items table header -->
+  <rect x="56" y="374" width="688" height="52" rx="10" fill="#d5f6eb"/>
+  <text x="72" y="405" font-size="14" font-weight="600" fill="#172933">Вид на стоката или услугата</text>
+  <text x="416" y="405" font-size="14" font-weight="600" fill="#172933">Количество</text>
+  <text x="568" y="396" font-size="14" font-weight="600" fill="#172933">Единична цена</text>
+  <text x="568" y="416" font-size="14" font-weight="600" fill="#172933">без данъка</text>
+
+  <!-- empty item rows (no data) -->
+  <rect x="72" y="442" width="260" height="12" rx="6" fill="#eef3f4"/>
+  <rect x="416" y="442" width="64" height="12" rx="6" fill="#eef3f4"/>
+  <rect x="568" y="442" width="120" height="12" rx="6" fill="#eef3f4"/>
+  <line x1="56" y1="468" x2="744" y2="468" stroke="#dbe5e7" stroke-width="1"/>
+  <rect x="72" y="482" width="220" height="12" rx="6" fill="#eef3f4"/>
+  <rect x="416" y="482" width="64" height="12" rx="6" fill="#eef3f4"/>
+  <rect x="568" y="482" width="120" height="12" rx="6" fill="#eef3f4"/>
+  <line x1="56" y1="508" x2="744" y2="508" stroke="#dbe5e7" stroke-width="1"/>
+
+  <!-- totals -->
+  <text x="72" y="546" font-size="14" fill="#172933">Данъчна основа</text>
+  <rect x="592" y="535" width="136" height="12" rx="6" fill="#eef3f4"/>
+  <text x="72" y="576" font-size="14" fill="#172933">Търговски намаления, ако не са в цената</text>
+  <rect x="592" y="565" width="136" height="12" rx="6" fill="#eef3f4"/>
+  <text x="72" y="606" font-size="14" fill="#172933">Ставка на данъка или основание при нулева ставка</text>
+  <rect x="592" y="595" width="136" height="12" rx="6" fill="#eef3f4"/>
+  <text x="72" y="636" font-size="14" fill="#172933">Размер на данъка</text>
+  <rect x="592" y="625" width="136" height="12" rx="6" fill="#eef3f4"/>
+  <line x1="56" y1="652" x2="744" y2="652" stroke="#dbe5e7" stroke-width="1"/>
+  <text x="72" y="678" font-size="15" font-weight="700" fill="#1f6a66">Сума за плащане, ако се различава</text>
+  <rect x="592" y="667" width="136" height="12" rx="6" fill="#c9eee4"/>
+
+  <!-- note -->
+  <rect x="32" y="714" width="736" height="48" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="743" text-anchor="middle" font-size="14" fill="#172933">За специални режими и нови превозни средства законът има допълнителни правила</text>
+</svg>

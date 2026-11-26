@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 592" width="800" height="592" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Сравнение на фактура, стокова разписка и кредитно известие: какво описва всеки документ и кога се издава</title>
+  <desc id="d">Три колони един до друг: фактурата описва продажбата и се издава не по-късно от 5 дни от данъчното събитие, стоковата разписка описва какво е предадено и придружава доставката, кредитното известие е документ към издадена фактура при намаление на данъчната основа или разваляне на доставката.</desc>
+
+  <!-- background card -->
+  <rect x="1" y="1" width="798" height="590" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Трите документа един до друг</text>
+  <text x="400" y="78" text-anchor="middle" font-size="15" fill="#4f5d63">Всеки от тях описва различно нещо от една и съща сделка</text>
+
+  <!-- column 1: invoice -->
+  <rect x="24" y="100" width="240" height="396" rx="14" fill="#d5f6eb"/>
+  <circle cx="60" cy="138" r="20" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="52" y="127" width="16" height="22" rx="3" fill="none" stroke="#1f6a66" stroke-width="2"/>
+  <line x1="56" y1="134" x2="64" y2="134" stroke="#1f6a66" stroke-width="2" stroke-linecap="round"/>
+  <line x1="56" y1="140" x2="64" y2="140" stroke="#1f6a66" stroke-width="2" stroke-linecap="round"/>
+  <text x="40" y="184" font-size="17" font-weight="700" fill="#172933">Фактура</text>
+  <text x="40" y="224" font-size="13" font-weight="700" fill="#1f6a66">ОПИСВА</text>
+  <text x="40" y="248" font-size="14" fill="#172933">Продажбата: стоката</text>
+  <text x="40" y="268" font-size="14" fill="#172933">или услугата, цената</text>
+  <text x="40" y="288" font-size="14" fill="#172933">и данъка</text>
+  <text x="40" y="332" font-size="13" font-weight="700" fill="#1f6a66">КОГА СЕ ИЗДАВА</text>
+  <text x="40" y="356" font-size="14" fill="#172933">Не по-късно от 5 дни</text>
+  <text x="40" y="376" font-size="14" fill="#172933">от данъчното събитие</text>
+  <text x="40" y="396" font-size="14" fill="#172933">или от получаването</text>
+  <text x="40" y="416" font-size="14" fill="#172933">на аванса</text>
+
+  <!-- column 2: delivery note -->
+  <rect x="280" y="100" width="240" height="396" rx="14" fill="#d0ebfc"/>
+  <circle cx="316" cy="138" r="20" fill="#ffffff" stroke="#256f9e" stroke-width="1.5"/>
+  <rect x="305" y="131" width="22" height="16" rx="2" fill="none" stroke="#256f9e" stroke-width="2"/>
+  <line x1="305" y1="137" x2="327" y2="137" stroke="#256f9e" stroke-width="2"/>
+  <text x="296" y="184" font-size="17" font-weight="700" fill="#172933">Стокова разписка</text>
+  <text x="296" y="224" font-size="13" font-weight="700" fill="#256f9e">ОПИСВА</text>
+  <text x="296" y="248" font-size="14" fill="#172933">Какво е предадено</text>
+  <text x="296" y="268" font-size="14" fill="#172933">и в какво количество</text>
+  <text x="296" y="332" font-size="13" font-weight="700" fill="#256f9e">КОГА СЕ ИЗДАВА</text>
+  <text x="296" y="356" font-size="14" fill="#172933">Придружава доставката</text>
+  <text x="296" y="376" font-size="14" fill="#172933">на стоки; получателят</text>
+  <text x="296" y="396" font-size="14" fill="#172933">обикновено я подписва</text>
+  <text x="296" y="416" font-size="14" fill="#172933">при приемането</text>
+
+  <!-- column 3: credit note -->
+  <rect x="536" y="100" width="240" height="396" rx="14" fill="#d5f6eb"/>
+  <circle cx="572" cy="138" r="20" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <line x1="563" y1="138" x2="581" y2="138" stroke="#1f6a66" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="552" y="184" font-size="17" font-weight="700" fill="#172933">Кредитно известие</text>
+  <text x="552" y="224" font-size="13" font-weight="700" fill="#1f6a66">ОПИСВА</text>
+  <text x="552" y="248" font-size="14" fill="#172933">Документ към издадена</text>
+  <text x="552" y="268" font-size="14" fill="#172933">фактура, с нейния</text>
+  <text x="552" y="288" font-size="14" fill="#172933">номер и дата и</text>
+  <text x="552" y="308" font-size="14" fill="#172933">основанието</text>
+  <text x="552" y="352" font-size="13" font-weight="700" fill="#1f6a66">КОГА СЕ ИЗДАВА</text>
+  <text x="552" y="376" font-size="14" fill="#172933">При намаление</text>
+  <text x="552" y="396" font-size="14" fill="#172933">на данъчната основа</text>
+  <text x="552" y="416" font-size="14" fill="#172933">или при разваляне</text>
+  <text x="552" y="436" font-size="14" fill="#172933">на доставката</text>
+
+  <!-- note -->
+  <rect x="24" y="512" width="752" height="56" rx="12" fill="#d0ebfc"/>
+  <text x="400" y="536" text-anchor="middle" font-size="14" fill="#172933">Данните за клиента, стоката и цената, въведени на едно място,</text>
+  <text x="400" y="556" text-anchor="middle" font-size="14" fill="#172933">излизат еднакви и в трите документа</text>
+</svg>
