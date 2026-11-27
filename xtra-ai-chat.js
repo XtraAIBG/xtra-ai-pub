@@ -2,6 +2,8 @@
 //   data-endpoint  chat API (streams `data: {"text": "..."}` lines)
 //   data-booking   free-diagnostic booking page
 //   data-email     contact address shown when the chat fails
+//   data-analytics "on" = send anonymous Google Analytics events (chat_open, chat_message, chat_booking_*);
+//                  they only leave the browser when the visitor has accepted analytics cookies (gtag + consent)
 // The file name starts with "xtra-ai-" so relativize-export.mjs makes its URL page-relative.
 (() => {
   const script = document.currentScript;
@@ -13,6 +15,28 @@
   }
   const BOOKING = data.booking || "";
   const EMAIL = data.email || "";
+
+  // ---- Analytics: anonymous GA4 events, never the message text. Off unless data-analytics="on". ----
+  // window.gtag is defined by the site's consent script; Google Analytics sends events only after consent.
+  const ANALYTICS = data.analytics === "on";
+  const track = (name, params = {}) => {
+    if (!ANALYTICS || typeof window.gtag !== "function") return;
+    try {
+      window.gtag("event", name, { chat_lang: (document.documentElement.lang || "").slice(0, 2), ...params });
+    } catch {}
+  };
+
+  // Random id of this conversation (per tab, new on "new conversation"): lets the chat API group the turns
+  // of one conversation (Langfuse, if the API has it on). It identifies nothing else.
+  const CONV_KEY = "xtra-ai-chat-conversation";
+  const newConversationId = () => {
+    const id = (crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + Date.now().toString(36)).replace(/[^A-Za-z0-9_-]/g, "");
+    try { sessionStorage.setItem(CONV_KEY, id); } catch {}
+    return id;
+  };
+  let conversation = "";
+  try { conversation = sessionStorage.getItem(CONV_KEY) || ""; } catch {}
+  if (!conversation) conversation = newConversationId();
 
   const isEN = (document.documentElement.lang || "").toLowerCase().startsWith("en");
 
@@ -747,7 +771,11 @@
   try { wasOpen = sessionStorage.getItem(OPEN_KEY) === "1"; } catch {}
   // No focus on restore: on phones that would pop the keyboard over the page just opened.
   if (wasOpen) setOpen(true, { focus: false });
-  fab.addEventListener("click", () => setOpen(!wrap.classList.contains("open")));
+  fab.addEventListener("click", () => {
+    const opening = !wrap.classList.contains("open");
+    setOpen(opening);
+    if (opening) track("chat_open");
+  });
 
   // ---- Teaser bubble ----
   // Typing dots appear next to the closed button at DOTS_DELAY and turn into a small "can I help?" bubble
@@ -798,9 +826,17 @@
   $(".teaser .t").addEventListener("click", () => { hideTeaser(); setOpen(true); });
   $(".teaser .c").addEventListener("click", hideTeaser);
   fab.addEventListener("click", hideTeaser);
+  // Booking link clicks: the button in Alex's messages and the link in the chat header.
+  msgsEl.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest("a");
+    if (a && sameUrl(a.href, BOOKING)) track("chat_booking_link_click", { link_place: "message" });
+  });
+  if (BOOKING) bookLink.addEventListener("click", () => track("chat_booking_link_click", { link_place: "header" }));
   // New conversation: forget the history (also in sessionStorage) and start again from the greeting.
   newBtn.addEventListener("click", () => {
     if (busy) return;
+    conversation = newConversationId();
+    track("chat_new_conversation");
     history = [];
     save();
     msgsEl.replaceChildren();
@@ -867,9 +903,11 @@
     card.appendChild(acts);
     msgsEl.appendChild(card);
     msgsEl.scrollTop = msgsEl.scrollHeight;
+    track("chat_booking_card_shown");
 
     no.addEventListener("click", () => {
       if (busy) return;
+      track("chat_booking_change");
       card.remove();
       addMsg("bot", T.bkChangeHint);
       input.focus();
@@ -884,13 +922,14 @@
         const res = await fetch(CONFIRM_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ticket: b.ticket }),
+          body: JSON.stringify({ ticket: b.ticket, conversation }),
         });
         reply = await res.json();
       } catch {
         reply = null;
       }
       card.remove();
+      track(reply && reply.ok ? "chat_booking_confirmed" : "chat_booking_failed", reply && !reply.ok ? { error_code: String(reply.code || "") } : {});
       if (reply && reply.ok) {
         addMsg("bot", T.bkDone(when, reply.result.email || b.email));
         // Tell Alex in later turns that the meeting is booked (the history is what the model sees).
@@ -915,6 +954,7 @@
       return;
     }
     bumpUserCount();
+    track("chat_message", { message_number: userCount() });
     busy = true;
     sendBtn.disabled = true;
     newBtn.disabled = true;
@@ -926,7 +966,7 @@
       const res = await fetch(ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: history, page: PAGE }),
+        body: JSON.stringify({ messages: history, page: PAGE, conversation }),
       });
       if (!res.ok || !res.body) throw new Error("bad response");
 
@@ -969,6 +1009,7 @@
       if (booking) addBookingCard(booking);
     } catch (e) {
       history.pop(); // keep history valid (user/assistant alternation)
+      track("chat_error");
       bot.classList.remove("typing");
       render(bot, T.error);
     } finally {

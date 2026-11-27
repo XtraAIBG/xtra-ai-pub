@@ -7,4 +7,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"seo-statii","s":["avtor","en","llms.txt","privacy","saveti","xtra-ai-chat-context.json"]},"h":65600,"c":"$Q3"}]]
 1:[["children",{"s":"(bg)","h":131120,"c":"$Q2"}]]
-0:{"b":"qbS0iuFEn4YjWMTqscxWe","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"6eLYvRWbRNNfHWYs5XRTY","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
