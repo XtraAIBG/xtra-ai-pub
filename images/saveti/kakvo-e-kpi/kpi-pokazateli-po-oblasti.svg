@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 572" width="800" height="572" role="img" aria-labelledby="t d" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+  <title id="t">Примери за показатели по области: запитвания, записвания и поръчки, средна поръчка, повторни клиенти, време за отговор, разход за реклама на едно запитване и посещения, които завършват със запитване</title>
+  <desc id="d">Осем карти в две колони: седем показателя с кратко обяснение как се броят и една карта, която напомня да изберете за начало три до пет показателя, свързани с целите Ви.</desc>
+  <rect x="1" y="1" width="798" height="570" rx="16" fill="#ffffff" stroke="#dbe5e7" stroke-width="1.5"/>
+  <text x="400" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#172933">Примери за показатели по области на работа</text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#4f5d63">Изберете само онези, които отговарят на целите Ви</text>
+  <rect x="24" y="104" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="152" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="52" y="145" width="20" height="14" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 146 L62 154 L72 146" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="134" font-size="16" font-weight="700" fill="#172933">Запитвания</text>
+  <text x="100" y="156" font-size="14" fill="#4f5d63">Обаждания, съобщения и форми</text>
+  <text x="100" y="178" font-size="14" fill="#4f5d63">за седмица или за месец</text>
+  <rect x="408" y="104" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="152" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="436" y="144" width="20" height="18" rx="3" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="436" y1="150" x2="456" y2="150" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M442 156 L445 159 L451 153" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="134" font-size="16" font-weight="700" fill="#172933">Записвания и поръчки</text>
+  <text x="484" y="156" font-size="14" fill="#4f5d63">Колко от запитванията стават</text>
+  <text x="484" y="178" font-size="14" fill="#4f5d63">записан час или поръчка</text>
+  <rect x="24" y="216" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="264" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M54 254 L70 254 L70 274 L66 271 L62 274 L58 271 L54 274 Z" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="58" y1="260" x2="66" y2="260" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="58" y1="265" x2="66" y2="265" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="246" font-size="16" font-weight="700" fill="#172933">Средна поръчка</text>
+  <text x="100" y="268" font-size="14" fill="#4f5d63">Сумата на продажбите, разделена</text>
+  <text x="100" y="290" font-size="14" fill="#4f5d63">на броя на поръчките</text>
+  <rect x="408" y="216" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="264" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M454 261 A9 9 0 1 0 453 269" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M455 254 L455 261 L448 261" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="246" font-size="16" font-weight="700" fill="#172933">Повторни клиенти</text>
+  <text x="484" y="268" font-size="14" fill="#4f5d63">Какъв дял от клиентите се връща</text>
+  <text x="484" y="290" font-size="14" fill="#4f5d63">за нова покупка или посещение</text>
+  <rect x="24" y="328" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="376" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <circle cx="62" cy="376" r="10" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M62 370 L62 376 L67 379" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="358" font-size="16" font-weight="700" fill="#172933">Време за отговор</text>
+  <text x="100" y="380" font-size="14" fill="#4f5d63">До първия отговор на клиента;</text>
+  <text x="100" y="402" font-size="14" fill="#4f5d63">по-ниската стойност е по-добра</text>
+  <rect x="408" y="328" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="446" cy="376" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <circle cx="446" cy="376" r="10" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="446" y1="371" x2="446" y2="381" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="442" y1="376" x2="450" y2="376" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="358" font-size="16" font-weight="700" fill="#172933">Разход за реклама</text>
+  <text x="484" y="380" font-size="16" font-weight="700" fill="#172933">на едно запитване</text>
+  <text x="484" y="402" font-size="14" fill="#4f5d63">Средно за всяко запитване</text>
+  <rect x="24" y="440" width="368" height="96" rx="14" fill="#d5f6eb"/>
+  <circle cx="62" cy="488" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <rect x="52" y="479" width="20" height="16" rx="2" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M63 489 L63 499 L66 496 L70 499" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="470" font-size="16" font-weight="700" fill="#172933">Посещения, които</text>
+  <text x="100" y="492" font-size="16" font-weight="700" fill="#172933">завършват със запитване</text>
+  <text x="100" y="514" font-size="14" fill="#4f5d63">Дял от посещенията на сайта</text>
+  <rect x="408" y="440" width="368" height="96" rx="14" fill="#d0ebfc"/>
+  <circle cx="446" cy="488" r="22" fill="#c9eee4" stroke="#2a8178" stroke-width="1.5"/>
+  <path d="M439 488 L444 493 L454 482" stroke="#1f6a66" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="484" y="470" font-size="16" font-weight="700" fill="#172933">За начало</text>
+  <text x="484" y="492" font-size="14" fill="#4f5d63">Три до пет показателя,</text>
+  <text x="484" y="514" font-size="14" fill="#4f5d63">свързани с целите Ви</text>
+</svg>

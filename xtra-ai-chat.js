@@ -25,6 +25,8 @@
         open: "Open chat",
         close: "Close chat",
         reset: "New conversation",
+        bigger: "Enlarge chat",
+        smaller: "Shrink chat",
         teaser: "Hi! 👋 Can I help?",
         prev: "Previous",
         hubLink: "All tips",
@@ -44,6 +46,13 @@
         book: "Free diagnostic",
         bookCta: "Book a free diagnostic →",
         error: "Something went wrong. Please try again" + (EMAIL ? " or email " + EMAIL + "." : "."),
+        bkTitle: "Please confirm your meeting",
+        bkOk: "Confirm",
+        bkChange: "Change",
+        bkSaving: "Booking…",
+        bkDone: (when, email) => "✅ Booked: **" + when + "**.\n\nWe sent a confirmation and a calendar invitation to " + email + ", and we will remind you before the meeting.",
+        bkChangeHint: "Tell me what to change (day, time, name or email).",
+        bkNote: (when, email) => "(Booked: " + when + ", confirmation sent to " + email + ")",
       }
     : {
         title: "Алекс · AI асистент",
@@ -53,6 +62,8 @@
         open: "Отвори чата",
         close: "Затвори чата",
         reset: "Нов разговор",
+        bigger: "Уголемете чата",
+        smaller: "Намалете чата",
         teaser: "Здравейте! 👋 Мога ли да помогна?",
         prev: "Предишна",
         hubLink: "Всички съвети",
@@ -72,6 +83,13 @@
         book: "Безплатна диагностика",
         bookCta: "Запазете безплатна диагностика →",
         error: "Възникна грешка. Опитайте отново" + (EMAIL ? " или пишете на " + EMAIL + "." : "."),
+        bkTitle: "Потвърдете срещата",
+        bkOk: "Потвърди",
+        bkChange: "Промени",
+        bkSaving: "Записвам…",
+        bkDone: (when, email) => "✅ Записано: **" + when + "**.\n\nИзпратихме потвърждение и покана за календара на " + email + " и ще Ви напомним преди срещата.",
+        bkChangeHint: "Напишете ми какво да променя (ден, час, име или имейл).",
+        bkNote: (when, email) => "(Записано: " + when + ", потвърждение изпратено на " + email + ")",
       };
 
   // ---- State (per tab; the old "bizgrow-chat-history" key is not carried over) ----
@@ -105,7 +123,7 @@
       .fab:hover { background: #1f6a66; }
       .fab svg { width: 26px; height: 26px; }
       .fab:focus-visible, button:focus-visible, textarea:focus-visible, a:focus-visible { outline: 2px solid #256f9e; outline-offset: 3px; }
-      .panel { display: none; flex-direction: column; width: min(380px, calc(100vw - 32px));
+      .panel { display: none; flex-direction: column; width: min(410px, calc(100vw - 32px));
         height: min(560px, calc(100dvh - 100px)); background: #fff; color: #172933;
         border-radius: 20px; box-shadow: 0 30px 70px -30px rgba(23,41,51,.45), 0 8px 24px rgba(23,41,51,.12);
         overflow: hidden; margin-bottom: 68px; }
@@ -134,7 +152,11 @@
       .head { background: #1f6a66; color: #fff; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
       .head strong { font-size: 15px; font-weight: 700; }
       .nm { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
-      .nm small { font-size: 12px; opacity: .85; font-weight: 500; }
+      .nm small { font-size: 12px; opacity: .85; font-weight: 500; white-space: nowrap; }
+      .head { gap: 6px; padding-left: 12px; padding-right: 10px; }
+      .who { flex: none; }
+      .head a:not(.cta) { padding: 5px 9px; font-size: 11.5px; margin-left: auto; }
+      .head { justify-content: flex-start; }
       .who { display: flex; align-items: center; gap: 10px; min-width: 0; }
       .ava { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex: none;
         border: 2px solid #d5f6eb; background: #d5f6eb; }
@@ -144,6 +166,16 @@
       .new:hover { background: rgba(255,255,255,.15); }
       .new:disabled { opacity: .5; cursor: default; }
       .new svg { width: 18px; height: 18px; }
+      .size { background: transparent; border: 0; color: #fff; cursor: pointer; padding: 4px; border-radius: 8px; display: grid; place-items: center; }
+      .size:hover { background: rgba(255,255,255,.15); }
+      .size svg { width: 17px; height: 17px; }
+      .size .shrink, .big .size .grow { display: none; }
+      .big .size .shrink { display: inline; }
+      /* Enlarged chat (desktop): wide and tall, still anchored bottom-right. */
+      .big .panel { width: min(760px, calc(100vw - 48px)); height: min(860px, calc(100dvh - 100px)); }
+      /* Enlarged: Alex's replies, tiles and chips use the full width; the visitor's own bubbles stay narrower. */
+      .big .m { max-width: 78%; }
+      .big .bot, .big .tiles, .big .chips { max-width: 100%; }
       .x { background: transparent; border: 0; color: #fff; font-size: 22px; line-height: 1; cursor: pointer; padding: 2px 4px; }
       .msgs { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 12px; display: flex; flex-direction: column; gap: 8px; background: #eef7fc; }
       .m { max-width: 85%; padding: 9px 12px; border-radius: 14px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
@@ -193,6 +225,18 @@
       .bot a.cta { display: table; margin: 8px 0 6px; background: #2a8178; color: #fff; text-decoration: none;
         font-weight: 600; font-size: 13px; padding: 7px 14px; border-radius: 999px; }
       .bot a.cta:hover { background: #1f6a66; }
+      /* Booking confirmation card (sent by the chat API when Alex has a time, name and email). */
+      .bk { border: 1.5px solid #2a8178; background: #f3fbf8; }
+      .bk .bk-t { font-weight: 700; color: #1f6a66; margin-bottom: 6px; }
+      .bk .bk-row { display: flex; gap: 8px; align-items: baseline; }
+      .bk .bk-row + .bk-row { margin-top: 2px; }
+      .bk .bk-acts { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+      .bk button { border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 700; cursor: pointer; border: 1px solid #2a8178; }
+      .bk .bk-ok { background: #2a8178; color: #fff; }
+      .bk .bk-ok:hover { background: #1f6a66; }
+      .bk .bk-no { background: #fff; color: #1f6a66; }
+      .bk .bk-no:hover { background: #d5f6eb; }
+      .bk button:disabled { opacity: .6; cursor: default; }
       .typing::after { content: "…"; animation: b 1s infinite; }
       @keyframes b { 50% { opacity: .2; } }
       @media (prefers-reduced-motion: reduce) { .typing::after { animation: none; } .fab { transition: none; } }
@@ -208,6 +252,7 @@
       @media (max-width: 640px) {
         .open .panel { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-height: none; margin: 0; border-radius: 0; }
         .open .fab, .open .teaser { display: none; }
+        .size { display: none; }
         textarea { font-size: 16px; height: 44px; }
         .send { min-height: 44px; }
         .m, .chips, .tiles { max-width: 100%; }
@@ -222,7 +267,8 @@
         <div class="head">
           <span class="who"><img class="ava" alt="" width="36" height="36" decoding="async"><span class="nm"><strong></strong><small></small></span></span>
           <a target="_blank" rel="noopener"></a>
-          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button>
+          <button class="new" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></button>
+          <button class="size" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="grow" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/><path class="shrink" d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg></button>
           <button class="x" type="button">×</button>
         </div>
         <div class="msgs" aria-live="polite"></div>
@@ -282,6 +328,20 @@
     bookLink.remove();
   }
   $(".x").setAttribute("aria-label", T.close);
+  // Enlarge / shrink (desktop). Remembered for the visit, so the next page opens the same size.
+  const SIZE_KEY = "xtra-ai-chat-big";
+  const sizeBtn = $(".size");
+  const setBig = (v) => {
+    wrap.classList.toggle("big", v);
+    sizeBtn.setAttribute("aria-label", v ? T.smaller : T.bigger);
+    sizeBtn.title = v ? T.smaller : T.bigger;
+    try { v ? sessionStorage.setItem(SIZE_KEY, "1") : sessionStorage.removeItem(SIZE_KEY); } catch {}
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  };
+  let wasBig = false;
+  try { wasBig = sessionStorage.getItem(SIZE_KEY) === "1"; } catch {}
+  setBig(wasBig);
+  sizeBtn.addEventListener("click", () => setBig(!wrap.classList.contains("big")));
   const newBtn = $(".new");
   newBtn.setAttribute("aria-label", T.reset);
   newBtn.title = T.reset;
@@ -761,6 +821,91 @@
     }
   });
 
+  // ---- Booking card ----
+  // The chat API sends {booking: {ticket, date, time, end, minutes, name, email}} when Alex has a free time,
+  // a name and an email. Nothing is booked until the visitor presses Confirm (POST /booking/confirm).
+  const CONFIRM_URL = new URL("/booking/confirm", ENDPOINT).href;
+  function bookingWhen(b) {
+    let day = b.date;
+    try {
+      day = new Date(b.date + "T12:00:00Z").toLocaleDateString(isEN ? "en-GB" : "bg-BG", {
+        weekday: "long", day: "numeric", month: "long", timeZone: "UTC",
+      });
+    } catch {}
+    return day + ", " + b.time + "–" + b.end;
+  }
+  function addBookingCard(b) {
+    const when = bookingWhen(b);
+    const card = document.createElement("div");
+    card.className = "m bot bk";
+    const title = document.createElement("div");
+    title.className = "bk-t";
+    title.textContent = T.bkTitle;
+    card.appendChild(title);
+    for (const [icon, value] of [["📅", when], ["👤", b.name], ["✉️", b.email]]) {
+      const row = document.createElement("div");
+      row.className = "bk-row";
+      const i = document.createElement("span");
+      i.setAttribute("aria-hidden", "true");
+      i.textContent = icon;
+      const v = document.createElement("span");
+      v.textContent = value;
+      row.append(i, v);
+      card.appendChild(row);
+    }
+    const acts = document.createElement("div");
+    acts.className = "bk-acts";
+    const ok = document.createElement("button");
+    ok.type = "button";
+    ok.className = "bk-ok";
+    ok.textContent = T.bkOk;
+    const no = document.createElement("button");
+    no.type = "button";
+    no.className = "bk-no";
+    no.textContent = T.bkChange;
+    acts.append(ok, no);
+    card.appendChild(acts);
+    msgsEl.appendChild(card);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+
+    no.addEventListener("click", () => {
+      if (busy) return;
+      card.remove();
+      addMsg("bot", T.bkChangeHint);
+      input.focus();
+    });
+    ok.addEventListener("click", async () => {
+      if (busy) return;
+      busy = true;
+      ok.disabled = no.disabled = sendBtn.disabled = newBtn.disabled = true;
+      ok.textContent = T.bkSaving;
+      let reply;
+      try {
+        const res = await fetch(CONFIRM_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ticket: b.ticket }),
+        });
+        reply = await res.json();
+      } catch {
+        reply = null;
+      }
+      card.remove();
+      if (reply && reply.ok) {
+        addMsg("bot", T.bkDone(when, reply.result.email || b.email));
+        // Tell Alex in later turns that the meeting is booked (the history is what the model sees).
+        const last = history[history.length - 1];
+        if (last && last.role === "assistant") last.content += "\n\n" + T.bkNote(when, reply.result.email || b.email);
+        save();
+      } else {
+        addMsg("bot", (reply && reply.message) || T.error);
+      }
+      busy = false;
+      sendBtn.disabled = newBtn.disabled = false;
+      input.focus();
+    });
+  }
+
   // ---- Sending ----
   async function send(text) {
     clearChips();
@@ -789,6 +934,7 @@
       const dec = new TextDecoder();
       let buf = "";
       let full = "";
+      let booking = null;
       for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
@@ -804,15 +950,23 @@
               bot.classList.remove("typing");
               render(bot, full);
               msgsEl.scrollTop = msgsEl.scrollHeight;
+            } else if (ev.booking && typeof ev.booking.ticket === "string") {
+              booking = ev.booking;
             }
           } catch {}
         }
       }
-      if (!full) throw new Error("empty reply");
+      if (!full && !booking) throw new Error("empty reply");
+      if (!full) {
+        full = T.bkTitle;
+        bot.classList.remove("typing");
+        render(bot, full);
+      }
       await articlesReady;
       addTiles(bot);
       history.push({ role: "assistant", content: full });
       save();
+      if (booking) addBookingCard(booking);
     } catch (e) {
       history.pop(); // keep history valid (user/assistant alternation)
       bot.classList.remove("typing");
@@ -824,6 +978,16 @@
       input.focus();
     }
   }
+
+  // Page hook: the home page's "Tell us about your business" box calls XtraAIChat.ask(text), which opens
+  // the chat and sends the text as the visitor's message (src/components/AskBox.tsx).
+  window.XtraAIChat = {
+    ask(text) {
+      const t = String(text || "").trim().slice(0, 1000);
+      setOpen(true, { focus: false });
+      if (t && !busy) send(t);
+    },
+  };
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
